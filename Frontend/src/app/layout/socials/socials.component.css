@@ -1,0 +1,39 @@
+.container{
+    background-color: #231e1e;
+    height: 250px;
+  }
+  .social-icons {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 5px;
+      justify-content: center;
+      align-items: center;
+      width: 20%;
+    }
+  
+  .social-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 5px;
+      width: 55px;
+      height: 55px;
+    }
+  .social-icon img{
+      height: 20px; 
+      width: 20px;
+    }
+  .heading{
+      color: #fff;
+      font-weight: 600;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 25px;
+    }
+  .sub-heading{
+      color: #fff;
+      font-weight: 400;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 15.71px;
+  }
+  
+  
