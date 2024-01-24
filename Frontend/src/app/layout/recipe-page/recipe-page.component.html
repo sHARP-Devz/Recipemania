@@ -1,0 +1,85 @@
+<!-- HEADER COMPONENT TO BE INSERTED HERE -->
+<div class="recipe-container">
+  <!-- SEARCH SECTION -->
+	<div class="search-wrapper my-5 pt-0.5">
+      <div class="mx-5 pt-3 ">
+        <h2  class="title">Browse Recipes</h2>
+      </div>
+      <div class="d-flex flex-row flex-md-row justify-content-md-between">
+        <select class=" mx-5 mb-md-0 select-box">
+          <option>Choose categories</option>
+        </select>
+        <div class="input-group mx-5 ps-5 mb-md-0">
+          <input type="text" class="search" placeholder="Search by keyword" aria-label="Search by keyword" aria-describedby="searchButton">
+          <button class="btn btn-outline-secondary search-button" type="button" id="searchButton"><img src="assets/Images/searchbutton.png"></button>
+        </div>
+      </div>
+	</div>
+<!-- CATEGORIES COMPNENT TO BE INSERTED HERE-->
+	<div class=" mx-auto mb-5 categories-wrapper">
+	</div>
+<!-- BROWSE RECIPES SECTION -->
+	<div class=" recipe-card ">
+    <h3 class="mx-5 ps-4 all-recipe">All Recipes</h3>
+    <div class="ps-4">
+      <div class="row">
+        <!-- recipe cards with data required to come from the Backend -->
+        <div *ngFor= "let image of images; let i = index" class="col-12 col-md-6 col-lg-6 m-5 p-3 recipebox ">
+          <img [src]= "image.url" alt="image.name"/>
+          <p class="image fw-bold">{{image.name}}</p>
+          <span class="profile fw-bold" *ngFor= "let profile of userProfile">
+            <img [src]= "profile.url" alt="user"/>
+            {{profile.name}}
+          </span>
+          <div class="p-3 ps-5 star-rating">
+            <ng-container *ngFor= "let _ of filledStars; let i = index">
+              <mat-icon class="star-icon">star</mat-icon>
+            </ng-container>
+            <ng-container *ngFor= "let _ of emptyStars; let i = index">
+              <mat-icon class="star-icon">star_border</mat-icon>
+            </ng-container>
+          </div>
+        </div>
+      </div>
+      <!-- Duplicaate code for the recipe card, design has only 6 recipe images and would not fill the screen,
+        to be erased when there are enough data-->
+			<div class="row">
+        <div *ngFor= "let image of images; let i = index" class="col-12 col-md-6 col-lg-6 m-5 p-3 recipebox">
+          <img [src]= "image.url" alt="image.name"/>
+          <p class="image fw-bold">{{image.name}}</p>
+          <span class="profile fw-bold" *ngFor= "let profile of userProfile">
+            <img [src]= "profile.url" alt="user"/>
+            {{profile.name}}
+          </span>
+          <div class="p-3 ps-5 star-rating">
+            <ng-container *ngFor= "let _ of filledStars; let i = index">
+              <mat-icon class="star-icon">star</mat-icon>
+            </ng-container>
+            <ng-container *ngFor= "let _ of emptyStars; let i = index">
+              <mat-icon class="star-icon">star_border</mat-icon>
+            </ng-container>
+          </div>
+        </div>
+
+      </div>
+    </div>
+	</div>
+  <!-- PAGINATION -->
+  <div class="pagination-wrapper me-5">
+    <nav aria-label="...">
+      <ul class="pagination pagination-sm me-5 justify-content-end ">
+        <li class="page-item" aria-current="page">
+          <span class="page-link pt-3 text-center rounded-circle">1</span>
+        </li>
+        <li class="page-item mx-3"><a class="page-link pt-3 text-center rounded-circle" href="#">2</a></li>
+        <li class="page-item me-5">
+          <a class="page-link pt-3 text-center rounded-circle" href="#" aria-label="Next">
+            <span aria-hidden="true">	<mat-icon>arrow_right</mat-icon></span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+<!-- FOOTER COMPNENT TO BE INSERTED HERE -->
+
