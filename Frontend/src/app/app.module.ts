@@ -10,6 +10,7 @@ import { LayoutComponent } from './layout/layout.component';
 import { MatIconModule } from '@angular/material/icon'
 import { LoginComponent } from './auth/login/login.component';
 import { RegisterComponent } from './auth/register/register.component';
+import { LandingPageComponent } from './layout/landing-page/landing-page.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { RegisterComponent } from './auth/register/register.component';
     AuthComponent,
     ModalComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    LandingPageComponent
   ],
   imports: [
     BrowserModule,

@@ -1,14 +1,16 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-
-import { LayoutRoutingModule } from './layout-routing.module';
+import { MatIconModule } from '@angular/material/icon';
+import { LandingPageComponent } from './landing-page/landing-page.component';
 
 
 @NgModule({
-  declarations: [],
-  imports: [
-    CommonModule,
-    LayoutRoutingModule
-  ]
-})
-export class LayoutModule { }
+    declarations: [
+      LandingPageComponent
+    ],
+    imports: [
+      MatIconModule
+    ],
+    providers: [],
+  })
+
+  export class LayoutModule {}
