@@ -20,5 +20,16 @@ export class LandingPageComponent {
     this.changeMenu = !this.changeMenu
   }
 
+  loginModalOpen: boolean = false
+  registerModalOpen: boolean = false
+
+
+  loginModaltoggle(open: boolean) {
+    this.loginModalOpen = open
+  }
+  registerModaltoggle(open: boolean) {
+    this.registerModalOpen = open
+  }
+
 
 }

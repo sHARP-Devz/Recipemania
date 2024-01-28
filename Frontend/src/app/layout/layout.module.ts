@@ -5,7 +5,7 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
 
 @NgModule({
     declarations: [
-        LandingPageComponent
+      LandingPageComponent
     ],
     imports: [
       MatIconModule
