@@ -8,6 +8,7 @@ import { LayoutComponent } from './layout/layout.component';
 import { AuthComponent } from './auth/auth.component';
 import { ModalComponent } from './shared/components/modal/modal.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { RecipePageComponent } from './layout/recipe-page/recipe-page.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     LayoutComponent,
     AuthComponent,
     ModalComponent,
+    RecipePageComponent
 
   ],
   imports: [
