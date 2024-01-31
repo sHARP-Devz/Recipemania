@@ -127,15 +127,20 @@ nav ul{
 
 
 
+
 @media screen and (max-width: 992px){
     .nav-menu{
         background: rgba(235, 227, 227, 1);
-
+        width: 100%;
+        transition: .5s ease;
+        padding: 0 2em;
     }
 
     .nav-menu ul li a{
         border-bottom: 1px solid black;
     }
+
+    
 
     
 }
