@@ -2,11 +2,13 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MatIconModule } from '@angular/material/icon';
 import { LandingPageComponent } from './landing-page/landing-page.component';
+import { RecipePageComponent } from './recipe-page/recipe-page.component';
 
 
 @NgModule({
     declarations: [
-      LandingPageComponent
+      LandingPageComponent,
+      RecipePageComponent
     ],
     imports: [
       MatIconModule,
@@ -14,7 +16,8 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
     ],
 
     exports: [
-      LandingPageComponent
+      LandingPageComponent,
+      RecipePageComponent
     ],
     providers: []
     
