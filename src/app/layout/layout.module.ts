@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { MatIconModule } from '@angular/material/icon';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 
@@ -8,9 +9,15 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
       LandingPageComponent
     ],
     imports: [
-      MatIconModule
+      MatIconModule,
+      CommonModule
     ],
-    providers: [],
+
+    exports: [
+      LandingPageComponent
+    ],
+    providers: []
+    
   })
 
   export class LayoutModule {}
