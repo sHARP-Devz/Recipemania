@@ -13,6 +13,7 @@ import { LayoutComponent } from './layout/layout.component';
 // Modules
 import { AuthModule } from './auth/auth.module';
 import { LayoutModule } from './layout/layout.module';
+import { BlogComponent } from './blog/blog.component';
 
 
 
@@ -21,7 +22,8 @@ import { LayoutModule } from './layout/layout.module';
     AppComponent,
     LayoutComponent,
     AuthComponent,
-    ModalComponent
+    ModalComponent,
+    BlogComponent
   ],
   imports: [
     BrowserModule,
