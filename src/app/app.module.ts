@@ -7,29 +7,26 @@ import { AppComponent } from './app.component';
 import { AuthComponent } from './auth/auth.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ModalComponent } from './shared/components/modal/modal.component';
-import { LayoutComponent } from './layout/layout.component';
 
 
 // Modules
 import { AuthModule } from './auth/auth.module';
-import { LayoutModule } from './layout/layout.module';
+import { LayoutsModule } from './layouts/layouts.module';
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    LayoutComponent,
-    AuthComponent,
-    ModalComponent
+    AuthComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatIconModule,
+    LayoutsModule,
     AuthModule,
-    LayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]

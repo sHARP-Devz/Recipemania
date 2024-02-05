@@ -20,6 +20,10 @@ nav ul{
     font-size: 0.875rem;
 }
 
+nav ul li{
+    cursor: pointer;
+}
+
 .brand-logo{
     height: 50px;
     width: 54px;
@@ -83,6 +87,10 @@ nav ul{
     width: 50px;
     border-radius: 50%;
     background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
 }
 
 .see-all-button p{
@@ -139,10 +147,6 @@ nav ul{
     .nav-menu ul li a{
         border-bottom: 1px solid black;
     }
-
-    
-
-    
 }
 
 @media screen and (min-width: 992px) {
@@ -157,4 +161,11 @@ nav ul{
         background-color: #000000;
     }
     
+}
+
+
+
+
+.keybaord {
+    color: black;
 }

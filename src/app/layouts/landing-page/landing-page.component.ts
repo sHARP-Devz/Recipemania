@@ -3,15 +3,13 @@ import { recipe_data } from './recipe';
 import { popular_recipe_data } from './pop_recipe';
 import { author_data } from './authors';
 import { ToggleService } from './toggle.service';
-import { RouterModule, RouterLink } from '@angular/router';
-
 
 @Component({
   selector: 'app-landing-page',
   templateUrl: './landing-page.component.html',
   styleUrls: ['./landing-page.component.css']
 })
-export class LandingPageComponent implements OnInit {
+export class LandingPageComponent {
 
   isMobile: boolean = false;
   toggle: boolean = false;
@@ -58,9 +56,6 @@ export class LandingPageComponent implements OnInit {
   registerModaltoggle(open: boolean) {
     this.registerModalOpen = open
   }
-
-
-  
 
 
 
