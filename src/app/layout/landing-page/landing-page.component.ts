@@ -13,6 +13,8 @@ export class LandingPageComponent {
   recipes = recipe_data;
   pop_recipe = popular_recipe_data;
   authors = author_data;
+  
+  categoriesShow: boolean = false;
 
   changeMenu = false;
 
@@ -29,6 +31,10 @@ export class LandingPageComponent {
   }
   registerModaltoggle(open: boolean) {
     this.registerModalOpen = open
+  }
+
+  toggleCategories(){
+    this.categoriesShow = !this.categoriesShow
   }
 
 

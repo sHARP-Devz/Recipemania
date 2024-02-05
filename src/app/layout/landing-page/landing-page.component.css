@@ -125,6 +125,15 @@ nav ul{
     background: #ccc;
 }
 
+.categories{
+    top: 70%;
+    left: 40px;
+    z-index: 100;
+}
+
+.category-blog{
+    padding: 50px 0;
+}
 
 
 @media screen and (max-width: 992px){

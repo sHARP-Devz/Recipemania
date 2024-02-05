@@ -11,6 +11,8 @@ import { MatIconModule } from '@angular/material/icon'
 import { LoginComponent } from './auth/login/login.component';
 import { RegisterComponent } from './auth/register/register.component';
 import { LandingPageComponent } from './layout/landing-page/landing-page.component';
+import { CategoriesComponent } from './shared/components/categories/categories.component';
+import { FootcatComponent } from './shared/components/footcat/footcat.component';
 
 @NgModule({
   declarations: [
@@ -20,13 +22,15 @@ import { LandingPageComponent } from './layout/landing-page/landing-page.compone
     ModalComponent,
     LoginComponent,
     RegisterComponent,
-    LandingPageComponent
+    LandingPageComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatIconModule
+    MatIconModule,
+    CategoriesComponent,
+    FootcatComponent
   ],
   providers: [],
   bootstrap: [AppComponent]

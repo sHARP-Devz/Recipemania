@@ -1,11 +1,11 @@
-<nav class="navbar navbar-expand-lg">
+<nav class="navbar navbar-expand-lg position-relative">
   <div class="orange-bgd">
     <img class="d-none d-lg-block h-50" src="../../assets/images/orange-background.png" alt="background">
   </div>
 
   <div class="container my-2">
     <a class="navbar-brand d-flex" href="#">
-      <img  class="brand-logo pe-2" src="../../assets/images/recipe_logo.png">
+      <img class="brand-logo pe-2" src="../../assets/images/recipe_logo.png">
       <div class=" d-flex flex-column p-0 logo-name fw-bold">
         <span class="fs-3 logo-name-recipe p-0">Recipe</span>
         <p class="fs-5 p-0">Mania</p>
@@ -14,7 +14,9 @@
 
     <div class="hamburger container d-flex align-items-center justify-content-between d-lg-none fw-bold">
       <p class="mt-3">MENU</p>
-      <button (click) = "changeBackground()" class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button (click)="changeBackground()" class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
     </div>
@@ -24,7 +26,7 @@
         <li class="nav-item pe-2">
           <a class="nav-link" aria-current="page" href="#">Home</a>
         </li>
-        <li class="nav-item pe-2">
+        <li (click)="toggleCategories()" class="nav-item pe-2">
           <a class="nav-link" aria-current="page" href="#">Categories</a>
         </li>
         <li class="nav-item pe-2">
@@ -43,8 +45,13 @@
     </div>
   </div>
 
-  
+  <div *ngIf="categoriesShow" class="categories position-absolute">
+    <app-categories></app-categories>
+  </div>
+
 </nav>
+
+
 
 <app-modal [isOpen]="loginModalOpen" (isClose)="loginModaltoggle(false)">
   <app-login></app-login>
@@ -93,14 +100,14 @@
         <li><img class="img-fluid" src="assets/images/{{recipe.img}}"></li>
         <li class="fs-3">{{recipe.recipe_name}}</li>
         <li class="d-flex align-items-center ps-5">
-          <img src= "assets/images/pfp.png">
+          <img src="assets/images/pfp.png">
           <p class="ps-3">{{recipe.user_name}}</p>
         </li>
         <li class="ratings"></li>
       </ul>
     </div>
 
-    
+
 
   </div>
 </section>
@@ -111,7 +118,7 @@
   <div class="row gy-5">
     <div class="col-12 col-lg-6" *ngFor="let pop of pop_recipe">
       <ul class="d-flex ms-5 list-unstyled">
-        <li><img class="img-fluid" src="assets/images/popular_recipes/{{pop.img}}" ></li>
+        <li><img class="img-fluid" src="assets/images/popular_recipes/{{pop.img}}"></li>
         <li>
           <div class="ps-5">
             <p class="fs-3">{{pop.recipe_name}}</p>
@@ -119,7 +126,7 @@
           </div>
         </li>
       </ul>
-    </div>  
+    </div>
   </div>
 </section>
 
@@ -130,11 +137,13 @@
     <div class="col-12 col-md-4" *ngFor="let author of authors">
       <ul class="author-container text-center mx-auto pt-2 pb-4 ps-3 list-unstyled">
         <li><img class="w-75 img-fluid" src="assets/images/authors/{{author.image}}"></li>
-        <li><p class="pt-2 fw-bold fs-4">{{author.author_name}}</p></li>
-        <li class="ratings"></li>   
+        <li>
+          <p class="pt-2 fw-bold fs-4">{{author.author_name}}</p>
+        </li>
+        <li class="ratings"></li>
       </ul>
     </div>
-    </div>
+  </div>
 </section>
 
 <!-- Popular Authors Second Idea -->
@@ -174,41 +183,39 @@
 </section> -->
 
 <!-- Category Blog -->
-<section class="container category-blog">
+<section class="container category-blog ">
   <div class="row">
     <div class="col-12 col-md-6">
       <p class="fs-3 fw-bold">Categories</p>
-      <div class="row category-block w-100 w-lg-50">
-        <div class="col-4 text-center category-item primary-color primary-background">
-
-        </div>
+      <div class="row d-flex justify-content-start w-100 w-lg-50c mt-5">
+        <app-footcat></app-footcat>
       </div>
 
     </div>
     <div class="col-12 col-md-6 ps-md-5 blog">
       <p class="fs-3 fw-bold">Blog</p>
-      <ul class="list-unstyled fs-4">
+      <ul class="list-unstyled fs-4 mt-5">
         <li>Make your own bread</li>
-        <li class = "vert-divider"></li>
+        <li class="vert-divider"></li>
         <li>How to decorate cookies</li>
-        <li class = "vert-divider"></li>
+        <li class="vert-divider"></li>
         <li>How to decorate cookies</li>
-        <li class = "vert-divider"></li>
+        <li class="vert-divider"></li>
         <li>How to make sushies</li>
-        <li class = "vert-divider"></li>
+        <li class="vert-divider"></li>
         <li>How to decorate cookies</li>
-        <li class = "vert-divider"></li>
+        <li class="vert-divider"></li>
         <li>How to decorate cookies</li>
-        <li class = "vert-divider"></li>
+        <li class="vert-divider"></li>
         <li>Make a party</li>
-        <li class = "vert-divider"></li>
+        <li class="vert-divider"></li>
         <li>How to be healthy</li>
-        <li class = "vert-divider"></li>
+        <li class="vert-divider"></li>
         <li>How to make cup cake</li>
-        <li class = "vert-divider"></li>
+        <li class="vert-divider"></li>
       </ul>
     </div>
-    
+
   </div>
 
 </section>
