@@ -3,7 +3,7 @@
     <img class="d-none d-lg-block h-50" src="../../assets/images/orange-background.png" alt="background">
   </div>
 
-  <div class="container my-2">
+  <div class="container my-2 header-container">
     <a class="navbar-brand d-flex" href="#">
       <img  class="brand-logo pe-2" src="../../assets/images/recipe_logo.png">
       <div class=" d-flex flex-column p-0 logo-name fw-bold">
@@ -20,28 +20,30 @@
     </div>
 
     <div class="nav-menu" id="navbarSupportedContent" *ngIf="!isMobile || toggle">
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-bold">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-bold cursor-pointer">
         <li class="nav-item pe-2">
-          <a class="nav-link" aria-current="page" href="#">Home</a>
+          <a  class="nav-link"  href="#">Home</a>
         </li>
         <li class="nav-item pe-2">
-          <a class="nav-link" aria-current="page" href="#">Categories</a>
+          <a class="nav-link"  href="#">Categories</a>
         </li>
         <li class="nav-item pe-2">
-          <a class="nav-link" aria-current="page" href="#">Recipes</a>
+          <a routerLink = "recipe" class="nav-link cursor-pointer">Recipes</a>
+        </li>
+        <li  class="nav-item pe-2">
+          <a class="nav-link"  href="#">Blogs</a>
         </li>
         <li class="nav-item pe-2">
-          <a class="nav-link" aria-current="page" href="#">Blogs</a>
-        </li>
-        <li class="nav-item pe-2">
-          <a class="nav-link" aria-current="page" href="#">Contact Us</a>
+          <a class="nav-link"  href="#">Contact Us</a>
         </li>
         <li (click)="loginModaltoggle(true)" class="nav-item">
-          <a class="nav-link" aria-current="page" href="#">Login/Register</a>
+          <a class="nav-link"  href="#">Login/Register</a>
         </li>
       </ul>
     </div>
   </div>
+
+  <button routerLink = "recipe">Test</button>
 
 
 </nav>
@@ -80,7 +82,7 @@
       <div class="see-all-button ms-lg-auto d-flex align-items-center justify-content-between">
         <p class="fs-4 ps-3 mt-2">See All</p>
         <div class="arrow-container">
-          <!-- <mat-icon>keyboard_arrow_right</mat-icon>  -->
+          <mat-icon>keyboard_arrow_right</mat-icon> 
         </div>
       </div>
 
