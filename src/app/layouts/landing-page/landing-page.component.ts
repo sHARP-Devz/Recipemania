@@ -20,12 +20,10 @@ export class LandingPageComponent {
   ngOnInit(): void {
     this.toggleService.getIsMobile().subscribe(mobileView => {
       this.isMobile = mobileView;
-      console.log(this.isMobile)
     })
 
     this.toggleService.getToggle().subscribe(toggleHamburger => {
       this.toggle = toggleHamburger;
-      console.log(this.toggle)
     })
   }
 
