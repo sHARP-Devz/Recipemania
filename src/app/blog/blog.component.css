@@ -13,7 +13,9 @@
   font-weight: 700;
   letter-spacing: 0em;
 }
-
+.shift {
+  margin-right: 200px;
+}
 .another-margin,
 .add-margin,
 .margin {
@@ -205,9 +207,12 @@
 
 .navbar {
   background: black;
-}
+} 
 
 /* Emeka Chukwu*/
+.navbar {
+  background: black;
+}
 
 @media screen and (max-width: 992px) {
   .navbar-contain {

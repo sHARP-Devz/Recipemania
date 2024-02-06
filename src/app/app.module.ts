@@ -14,6 +14,7 @@ import { LayoutComponent } from './layout/layout.component';
 import { AuthModule } from './auth/auth.module';
 import { LayoutModule } from './layout/layout.module';
 import { BlogComponent } from './blog/blog.component';
+import { CustomDropDownComponent } from './custom-drop-down/custom-drop-down.component';
 
 
 
@@ -23,7 +24,8 @@ import { BlogComponent } from './blog/blog.component';
     LayoutComponent,
     AuthComponent,
     ModalComponent,
-    BlogComponent
+    BlogComponent,
+    CustomDropDownComponent
   ],
   imports: [
     BrowserModule,

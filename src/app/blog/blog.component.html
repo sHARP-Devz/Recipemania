@@ -8,6 +8,7 @@
       </span>
     </div>
 
+    <!-- Mobile Navigation -->
     <div
       class="hamburger d-flex w-100 justify-content-between d-lg-none align-items-center px-3"
     >
@@ -25,7 +26,12 @@
       </button>
     </div>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <!-- Desktop Navigation -->
+    <div
+      class="collapse navbar-collapse"
+      id="navbarSupportedContent"
+      *ngIf="!isMobileView"
+    >
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0 make-margin text-white">
         <li class="nav-item me-2">
           <a class="nav-link active" aria-current="page" href="#">Home</a>
@@ -343,7 +349,7 @@
 <!-- Emeka Code -->
 
 <div class="container">
-  <div class="d-flex justify-content-between mt-3">
+  <div class="d-flex justify-content-between mt-3 flex-column flex-lg-row">
     <!-- new code -->
     <div class="">
       <div class="">
@@ -599,7 +605,7 @@
         </div>
       </div>
     </div>
-    <div class="most-visited-blogs">
+    <div class="most-visited-blogs px-5">
       <h4 class="visited-blogs">Most visited Blogs</h4>
 
       <p class="blog-item">Make your own bread</p>
