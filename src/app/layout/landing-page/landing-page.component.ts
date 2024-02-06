@@ -43,6 +43,8 @@ export class LandingPageComponent implements OnInit {
   recipes = recipe_data;
   pop_recipe = popular_recipe_data;
   authors = author_data;
+  
+  categoriesShow: boolean = false;
 
 
 
@@ -55,6 +57,10 @@ export class LandingPageComponent implements OnInit {
   }
   registerModaltoggle(open: boolean) {
     this.registerModalOpen = open
+  }
+
+  toggleCategories(){
+    this.categoriesShow = !this.categoriesShow
   }
 
 
