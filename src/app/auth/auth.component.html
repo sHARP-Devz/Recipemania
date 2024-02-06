@@ -1,0 +1,8 @@
+<button (click)="loginModaltoggle(true)" >Login</button>
+<button (click)="registerModaltoggle(true)" >Register</button>
+<!-- <app-modal [isOpen]="loginModalOpen" (isClose)="loginModaltoggle(false)">
+  <app-login></app-login>
+</app-modal> -->
+<app-modal [isOpen]="registerModalOpen" (isClose)="registerModaltoggle(false)">
+  <app-register></app-register>
+</app-modal>

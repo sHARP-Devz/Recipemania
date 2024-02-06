@@ -1,0 +1,152 @@
+/* General Styles */
+.primary-color{
+    color: #FDA47A;
+}
+
+.primary-background{
+    background: #FDA47A;
+}
+
+.orange-bgd{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+}
+
+/* Nav Section */
+nav ul{
+    font-family: 'Montserrat';
+    font-size: 0.875rem;
+}
+
+.brand-logo{
+    height: 50px;
+    width: 54px;
+}
+
+.logo-name{
+    font-family: 'Nunito';
+}
+
+.logo-name-recipe{
+    color: #FDA47A;
+}
+
+/* Hamburger */
+.hamburger{
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+}
+
+.white{
+    background: #fff;
+}
+
+.orange{
+    background: #FDA47A;
+}
+
+/* Hero Section */
+.hero{
+    padding-top: 5rem;
+}
+
+.hero-text{
+    text-wrap: nowrap;
+    font-size: 4vw;
+    margin-top: 3em;
+    margin-left: 2rem;
+}
+
+.hero img{
+    transform: scale(1.05);
+    
+}
+
+/* Browse Section */
+
+.browse p{
+    font-family: 'Montserrat';
+}
+
+.see-all-button{
+    border-radius: 30px;
+    width: 183px;
+    height: 58px;
+    background: #FDA47A;
+    color: #ffffff;
+}
+
+.arrow-container{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: #ffffff;
+}
+
+.see-all-button p{
+    font-size: 25px;
+    font-weight: 600px;
+}
+
+.recipe-container{
+    width: 80%;
+    background: #FFF5EC;
+    border-radius: 20px;
+}
+
+.browse ul {
+    list-style: none;
+}
+
+
+/* Popular Authors */
+.author-container{
+    background: #E2DBDB;
+    border-radius: 30px;
+}
+
+.author-container-2 img{
+    border-radius: 50%;
+}
+
+/* Category Blog*/
+.category-item{
+    width: 131px;
+    height: 91px;
+    border: 3px solid white
+}
+
+.vert-divider{
+    width: 60%;
+    height: 1px;
+    margin: 8px 0;
+    background: #ccc;
+}
+
+
+
+
+@media screen and (max-width: 992px){
+    .nav-menu{
+        background: rgba(235, 227, 227, 1);
+        width: 100%;
+        transition: .5s ease;
+        padding: 0 2em;
+    }
+
+    .nav-menu ul li a{
+        border-bottom: 1px solid black;
+    }
+
+    
+
+    
+}
+
+@media screen and (min-width: 992px) {
+    .browse{
+        margin-top: 16rem;
+    }
+}

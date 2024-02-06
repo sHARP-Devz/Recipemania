@@ -1,0 +1,120 @@
+.container{
+    background-color: #e2dbdb;
+    height: 100%;
+    width: 1198px;
+    border-radius: 20px;
+    
+}
+.recipe-logo{
+    height: 70px;
+    width: 241.5px;
+}
+.row {
+    display: flex;
+    flex-wrap: nowrap;
+}
+.list-items {
+  
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+  }
+  
+  .recent-categories-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .flexed-lists {
+    display: flex;
+  }
+
+  #emailInput {
+    height: 50px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    font-size: 14px;
+  }
+
+  #submitButton {
+    height: 50px;
+    width: 141px;
+    background-color: #282B30;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+  }
+  .newsletter-title{
+    color: #282B30;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+  }
+  .newsletter-description{
+    color: #282B30;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+  }
+  @media (max-width: 768px) {
+    .container {
+      padding: 0 15px;
+    }
+    .row {
+      display: flex;
+      flex-direction: column;
+    }
+    .col-md-3 {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    .newsletter-container {
+      order: -1; 
+      margin-left: auto; 
+      margin-right: auto; 
+      margin-bottom: 20px;
+      width: 100%;
+    }
+  }
+  
+  
+  @media (max-width: 575px) {
+    .container{
+      width: 529px;
+      height: 674px;
+    }
+    .recent-categories-title {
+      font-size: 12px; 
+    }
+    .newsletter-title {
+      font-size: 16px; 
+    }
+    .newsletter-description {
+      font-size: 12px; 
+    }
+    .newsletter-container {
+      order: -1; 
+      margin-left: auto; 
+      margin-right: auto; 
+      margin-bottom: 20px;
+      width: 100%;
+    }
+    .flexed-lists.recent-categories {
+      padding: 10px;
+      display: flex;
+      flex: 1;
+    }
+    .flexed-lists{
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    .flexed-lists.latest-recipes,
+  .flexed-lists.recent-categories-title {
+    display: none;
+  }
+  }
