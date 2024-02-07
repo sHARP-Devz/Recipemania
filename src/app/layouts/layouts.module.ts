@@ -9,6 +9,8 @@ import { ModalComponent } from '../shared/components/modal/modal.component';
 import { LoginComponent } from '../auth/login/login.component';
 import { MatIconModule } from '@angular/material/icon';
 import { RecipePageComponent } from './recipe-page/recipe-page.component';
+import { CategoriesComponent } from '../shared/components/categories/categories.component';
+import { FootcatComponent } from '../shared/components/footcat/footcat.component';
 
 
 @NgModule({
@@ -22,7 +24,9 @@ import { RecipePageComponent } from './recipe-page/recipe-page.component';
     LayoutsRoutingModule,
     MatIconModule,
     ModalComponent,
-    LoginComponent
+    LoginComponent,
+    CategoriesComponent,
+    FootcatComponent
   ],
   exports: [
     LandingPageComponent,
