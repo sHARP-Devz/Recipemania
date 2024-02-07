@@ -10,7 +10,6 @@ import { LoginComponent } from './login/login.component';
 @NgModule({
   declarations: [
     RegisterComponent,
-    LoginComponent
   ],
   imports: [
     CommonModule,
@@ -19,7 +18,6 @@ import { LoginComponent } from './login/login.component';
   ],
   exports: [
     RegisterComponent,
-    LoginComponent
   ]
 })
 export class AuthModule { }

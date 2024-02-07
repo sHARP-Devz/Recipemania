@@ -9,7 +9,7 @@ import { ToggleService } from './toggle.service';
   templateUrl: './landing-page.component.html',
   styleUrls: ['./landing-page.component.css']
 })
-export class LandingPageComponent implements OnInit {
+export class LandingPageComponent {
 
   isMobile: boolean = false;
   toggle: boolean = false;
@@ -20,12 +20,10 @@ export class LandingPageComponent implements OnInit {
   ngOnInit(): void {
     this.toggleService.getIsMobile().subscribe(mobileView => {
       this.isMobile = mobileView;
-      console.log(this.isMobile)
     })
 
     this.toggleService.getToggle().subscribe(toggleHamburger => {
       this.toggle = toggleHamburger;
-      console.log(this.toggle)
     })
   }
 
@@ -62,9 +60,6 @@ export class LandingPageComponent implements OnInit {
   toggleCategories(){
     this.categoriesShow = !this.categoriesShow
   }
-
-
-  
 
 
 
