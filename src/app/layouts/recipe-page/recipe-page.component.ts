@@ -5,19 +5,20 @@ import { Component,   Input } from '@angular/core';
   templateUrl: './recipe-page.component.html',
   styleUrls: ['./recipe-page.component.css']
 })
+
 export class RecipePageComponent {
  // DATA FOR THE RECIPES GOES HERE
  images: any[] = [
-  { name: "Chicken", url: 'assets/Images/chicken.png' },
-  { name: "Chicken Soup", url: 'assets/Images/chickensoup.png' },
-  { name: "Sou", url: 'assets/Images/sou.png' },
-  { name: "Coffee", url: 'assets/Images/coffee.png'},
-  { name: "Ice Cream", url: 'assets/Images/icecream.png'},
-  { name: "Garlic Shrimps", url: 'assets/Images/garlicshrimps.png'}
+  { name: "Chicken", url: 'assets/images/chicken.png' },
+  { name: "Chicken Soup", url: 'assets/images/chickensoup.png' },
+  { name: "Sou", url: 'assets/images/sou.png' },
+  { name: "Coffee", url: 'assets/images/coffee.png'},
+  { name: "Ice Cream", url: 'assets/images/icecream.png'},
+  { name: "Garlic Shrimps", url: 'assets/images/garlicshrimps.png'}
   ];
 
   // DATA FOR THE USER PROFILE GOES HERE
-  userProfile: any[] = [{ name: "Bambam", url: 'assets/Images/profilepic.png' }];
+  userProfile: any[] = [{ name: "Bambam", url: 'assets/images/profilepic.png' }];
 
   // PAGINATION LOGIC
   @Input() rating: number = 0;
