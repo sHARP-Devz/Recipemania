@@ -13,9 +13,7 @@
   font-weight: 700;
   letter-spacing: 0em;
 }
-.shift {
-  margin-right: 200px;
-}
+
 .another-margin,
 .add-margin,
 .margin {
@@ -127,89 +125,7 @@
   display: flex;
 }
 
-/* .main-img {
-  overflow: hidden;
-  width: 100%;
-} */
-/* max-width: 300px;  */
-/* margin-right: 600px; */
-/* min-width: 200px; */
 
-/* emeka code */
-
-/* width: 163.26px;
-  height: 144.55px;
-}
-
-.flex-span {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-.inline-block {
-  display: inline-block;
-}
-
-.text {
-  margin-top: 9px;
-
-  font-family: Montserrat;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0em;
-}
-.icon {
-  width: 22px;
-  font-family: Montserrat;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 15px;
-  letter-spacing: 0em;
-  text-align: left;
-}
-.fs {
-  font-family: Montserrat;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 15px;
-  letter-spacing: 0em;
-  text-align: left;
-}
-.text {
-  margin-top: 0px;
-  font-size: 24px;
-  font-family: "Montserrat";
-  font-weight: "400";
-  line-height: 24px;
-}
-
-.main-btn {
-  background: #fda47a;
-  color: white;
-  margin-top: 10px;
-  width: fit-content;
-  font-family: Montserrat;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 20px;
-  letter-spacing: 0em;
-  text-align: left;
-}
-
-.add-margins {
-  margin-right: 200px;
-}
-
-.blog-details {
-  width: 100%;
-}
-
-.navbar {
-  background: black;
-} 
-
-/* Emeka Chukwu*/
 .navbar {
   background: black;
 }
@@ -218,14 +134,26 @@
   .navbar-contain {
     background: white;
   }
+  .navbar-nav li a {
+    color: black !important;
+    padding-top: 15px;
+  }
 
+  .navbar-nav {
+    padding-top: 15px;
+    /* margin-bottom: 200px; */
+  }
   .make-your-own {
     font-size: 20px;
   }
 
   .navbar {
-    background: red;
+    background: white;
   }
+
+  /* .navbar {
+    background: black;
+  } */
 }
 
 .hamburger {

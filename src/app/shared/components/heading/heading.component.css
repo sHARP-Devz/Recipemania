@@ -1,0 +1,25 @@
+.peach-div {
+  background-color: rgba(226, 219, 219, 1);
+  height: 110px;
+  margin-top: 60px;
+}
+.custom-width {
+  /* max-width: 1440px; */
+  width: 100%;
+  /* margin: 0 auto; */
+}
+.blogs {
+  /* text-align: center; */
+  padding-top: 40px;
+  padding-left: 50px;
+}
+.another-margin,
+.add-margin,
+.margin {
+  font-family: Montserrat;
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 43px;
+  letter-spacing: 0em;
+  text-align: left;
+}
