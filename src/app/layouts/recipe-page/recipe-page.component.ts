@@ -5,6 +5,7 @@ import { Component,   Input } from '@angular/core';
   templateUrl: './recipe-page.component.html',
   styleUrls: ['./recipe-page.component.css']
 })
+
 export class RecipePageComponent {
  // DATA FOR THE RECIPES GOES HERE
  images: any[] = [
