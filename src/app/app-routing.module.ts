@@ -1,9 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { LandingPageComponent } from './layout/landing-page/landing-page.component';
 
-const routes: Routes = [
-  {path: 'landing', component: LandingPageComponent}
+
+const routes: Routes = [ 
+  { path: '', redirectTo: '/layouts/home', pathMatch: 'full'},
+  { path: 'layouts', loadChildren: () => import('./layouts/layouts.module').then(m => m.LayoutsModule) }
 ];
 
 @NgModule({
