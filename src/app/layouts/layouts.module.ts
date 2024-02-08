@@ -11,13 +11,16 @@ import { MatIconModule } from '@angular/material/icon';
 import { RecipePageComponent } from './recipe-page/recipe-page.component';
 import { CategoriesComponent } from '../shared/components/categories/categories.component';
 import { FootcatComponent } from '../shared/components/footcat/footcat.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
+import { TitleBlockComponent } from '../shared/components/title-block/title-block.component';
 
 
 @NgModule({
   declarations: [
     LayoutsComponent,
     LandingPageComponent,
-    RecipePageComponent
+    RecipePageComponent,
+    ContactUsComponent
   ],
   imports: [
     CommonModule,
@@ -26,7 +29,8 @@ import { FootcatComponent } from '../shared/components/footcat/footcat.component
     ModalComponent,
     LoginComponent,
     CategoriesComponent,
-    FootcatComponent
+    FootcatComponent,
+    TitleBlockComponent
   ],
   exports: [
     LandingPageComponent,

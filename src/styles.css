@@ -12,6 +12,7 @@ body{
 }
 :root {
   --primary-color: #FDA47A;
+  --accent-color: #E2DBDB;
 }
 html::-webkit-scrollbar{
   display: none;
