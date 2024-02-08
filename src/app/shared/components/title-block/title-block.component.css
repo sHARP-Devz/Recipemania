@@ -5,6 +5,9 @@
 .custom-bg h1{
   font-family: 'Montserrat';
 }
+.custom-cursor{
+  cursor: pointer;
+}
 /* .custom-fw{
   font-weight: lighter;
 } */
