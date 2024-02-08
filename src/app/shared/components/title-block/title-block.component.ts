@@ -13,5 +13,5 @@ import { RouterLink } from '@angular/router';
 export class TitleBlockComponent {
   @Input() height:number = 150;
   @Input() title:string = 'title'
-  @Input() page:string = 'page'
+  @Input() color:string = 'color'
 }
