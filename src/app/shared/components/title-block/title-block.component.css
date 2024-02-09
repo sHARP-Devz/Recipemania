@@ -1,0 +1,13 @@
+.custom-bg{
+  background-color: var(--accent-color);
+  padding: 0 200px 0 100px;
+}
+.custom-bg h1{
+  font-family: 'Montserrat';
+}
+.custom-cursor{
+  cursor: pointer;
+}
+/* .custom-fw{
+  font-weight: lighter;
+} */

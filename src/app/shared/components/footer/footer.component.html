@@ -1,14 +1,28 @@
 <footer class="footer">
-  <div class="container mt-5">
-    <div class="row">
-      <div class="col-md-3 mb-3 mt-4 mb-md-0 d-flex">
-        <img src="assets/Images/logo/logo.png" alt="icon" class="recipe-logo img-fluid">
+  <div class="container custom-wrapper mt-5">
+    <div class="row content">
+      <div class="col-md-2 mt-5">
+        <a class="navbar-brand d-flex" href="#">
+          <img
+            class="brand-logo pe-2"
+            src="../../assets/images/recipe_logo.png"
+          />
+          <div
+            class="d-flex flex-column p-0 logo-name fw-bold"
+            style="font-family: 'Nunito'"
+          >
+            <span class="fs-3 logo-name-recipe p-0" style="color: #fff"
+              >Recipe</span
+            >
+            <p class="fs-5 p-0" style="color: #fda47a">Mania</p>
+          </div>
+        </a>
       </div>
-      <div class="list-items col-md-9 mt-5">
-        <div class="row">
+      <div class="col-md-10 list-items mt-5">
+        <div class="row list-items">
           <div class="col-md-3 recent-wrapper">
             <div class="recent-categories-title mx-3">Recent categories</div>
-            <div class="flexed-lists recent-categories ">
+            <div class="flexed-lists recent-categories">
               <ul>
                 <li>Category6</li>
                 <li>Category4</li>
@@ -44,7 +58,7 @@
               </ul>
             </div>
           </div>
-          <div class="col-md-3 ">
+          <div class="col-md-3">
             <div class="recent-categories-title mx-3">Latest Recipes</div>
             <div class="flexed-lists latest-recipes">
               <ul>
@@ -69,18 +83,28 @@
         </div>
       </div>
     </div>
-    <hr class="my-4">
-    
-    <div class="newsletter-container" style="margin-left: 300px;">
+    <hr class="my-4" />
+    <div class="newsletter-container">
       <h4 class="newsletter-title">NEWSLETTER</h4>
       <div class="d-flex align-items-center">
-        <p class="newsletter-description">Sign up to receive email updates on new recipes</p>
-      <form class="newsletter-form" action="#" method="post" class="mx-3 mb-3">
-          <input type="email" id="emailInput" placeholder="Your email address" required>
+        <p class="newsletter-description">
+          Sign up to receive email updates on new recipes
+        </p>
+        <form
+          class="newsletter-form"
+          action="#"
+          method="post"
+          class="mx-3 mb-3"
+        >
+          <input
+            type="email"
+            id="emailInput"
+            placeholder="Your email address"
+            required
+          />
           <button type="submit" id="submitButton">SUBSCRIBE</button>
-      </form>
+        </form>
       </div>
     </div>
-    
   </div>
 </footer>
