@@ -8,6 +8,12 @@
 .custom-cursor{
   cursor: pointer;
 }
-/* .custom-fw{
-  font-weight: lighter;
-} */
+@media screen and (max-width: 450px) {
+  .custom-bg{
+    padding: 0 20px;
+    height: 70px;
+  }
+  .custom-bg h1{
+    font-size: 15px;
+  }
+}
