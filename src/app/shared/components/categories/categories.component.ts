@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+
 
 @Component({
   selector: 'app-categories',
@@ -9,6 +10,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./categories.component.css']
 })
 export class CategoriesComponent {
+  @Input() backgroundColor: string = 'white';
 
   col1 =[
     { images: 'assets/icons/beef.svg', name: 'Beef' },
