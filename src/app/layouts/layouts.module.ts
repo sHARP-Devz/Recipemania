@@ -15,6 +15,7 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
 import { TitleBlockComponent } from '../shared/components/title-block/title-block.component';
 import { SocialsComponent } from '../shared/components/socials/socials.component';
 import { FooterComponent } from '../shared/components/footer/footer.component';
+import { PrimaryButtonComponent } from '../shared/components/primary-button/primary-button.component';
 
 
 @NgModule({
@@ -34,7 +35,8 @@ import { FooterComponent } from '../shared/components/footer/footer.component';
     FootcatComponent,
     TitleBlockComponent,
     SocialsComponent,
-    FooterComponent
+    FooterComponent,
+    PrimaryButtonComponent
   ],
   exports: [
     LandingPageComponent,
