@@ -10,7 +10,7 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./categories.component.css']
 })
 export class CategoriesComponent {
-  @Input() backgroundColor: string = 'white';
+  @Input() backgroundColor: string | undefined;
 
   col1 =[
     { images: 'assets/icons/beef.svg', name: 'Beef' },
