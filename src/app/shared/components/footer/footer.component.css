@@ -1,0 +1,160 @@
+.container {
+  background-color: #e2dbdb;
+  width: 1198px;
+  border-radius: 20px;
+}
+
+.brand-logo {
+  height: 50px;
+  width: 54px;
+}
+
+.custom-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.recent-categories-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.flexed-lists {
+  display: flex;
+}
+
+#emailInput,
+#submitButton {
+  height: 50px;
+  font-size: 14px;
+}
+
+#emailInput {
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+}
+
+#submitButton {
+  width: 141px;
+  background-color: #282b30;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  border: none;
+}
+
+.newsletter-title {
+  color: #282b30;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+}
+
+.newsletter-description {
+  color: #282b30;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+}
+
+.newsletter-container {
+  margin-left: 200px;
+  width: 100%;
+}
+
+/* Styles for screens up to 768px */
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+    height: 100%;
+  }
+
+  .custom-wrapper {
+    flex-direction: column;
+  }
+  .content{
+    display: inline;
+  }
+
+  .footer .newsletter-container {
+    margin-left: 0;
+    gap: 0;
+  }
+
+  .footer hr {
+    display: none;
+  }
+
+  .recent-categories-title {
+    font-size: 12px;
+  }
+
+  .newsletter-title {
+    font-size: 12px;
+  }
+
+  .newsletter-description {
+    font-size: 9px;
+  }
+  .flexed-lists ul li {
+    margin-bottom: 5px;
+    /* width: 100%; */
+  }
+  .flexed-lists .recent-wrapper {
+    margin-bottom: 20px;
+  }
+
+  /* Add margin-top to the "Latest Blogs" section */
+  .flexed-lists .latest-blogs-wrapper {
+    margin-top: 20px;
+  }
+
+  #emailInput {
+    height: 26px;
+    width: 190px;
+    font-size: 8px;
+  }
+
+  #submitButton {
+    height: 26px;
+    width: 68px;
+    font-size: 8px;
+  }
+  
+}
+
+@media screen and (max-width: 575px) {
+  
+  .container {
+    width: 529px;
+    height: 100%;
+  }
+  .custom-wrapper {
+    flex-direction: column-reverse;
+  }
+  .newsletter-title {
+    font-size: 10px;
+  }
+  .newsletter-description {
+    font-size: 7px;
+  }
+
+  #emailInput {
+    height: 24px;
+    width: 187px;
+    font-size: 6px;
+  }
+
+  #submitButton {
+    height: 24px;
+    width: 66px;
+    font-size: 6px;
+  }
+  .footer .col-md-3:nth-child(3) {
+    display: none;
+  }
+  
+}
+
+

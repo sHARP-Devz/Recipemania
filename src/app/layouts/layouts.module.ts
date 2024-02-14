@@ -13,6 +13,8 @@ import { CategoriesComponent } from '../shared/components/categories/categories.
 import { FootcatComponent } from '../shared/components/footcat/footcat.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { TitleBlockComponent } from '../shared/components/title-block/title-block.component';
+import { SocialsComponent } from '../shared/components/socials/socials.component';
+import { FooterComponent } from '../shared/components/footer/footer.component';
 
 
 @NgModule({
@@ -30,7 +32,9 @@ import { TitleBlockComponent } from '../shared/components/title-block/title-bloc
     LoginComponent,
     CategoriesComponent,
     FootcatComponent,
-    TitleBlockComponent
+    TitleBlockComponent,
+    SocialsComponent,
+    FooterComponent
   ],
   exports: [
     LandingPageComponent,
