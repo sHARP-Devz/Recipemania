@@ -10,9 +10,6 @@ import { CommonModule } from '@angular/common';
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.css'],
 })
-<<<<<<< HEAD
-export class NavbarComponent {}
-=======
 export class NavbarComponent {
 
   @Input() backgroundColor: string | undefined;
@@ -64,4 +61,3 @@ export class NavbarComponent {
   }
 
 }
->>>>>>> 80dab6040d0d3411a7517129a319c16220fc9150
