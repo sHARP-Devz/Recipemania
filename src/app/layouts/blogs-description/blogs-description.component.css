@@ -1,3 +1,8 @@
+.add-width {
+  width: 295.08px;
+  height: 327px;
+}
+
 .recipe {
   color: rgba(255, 255, 255, 1);
   font-family: Nunito;
@@ -94,9 +99,7 @@
 }
 
 .custom-width {
-  /* max-width: 1440px; */
   width: 100%;
-  /* margin: 0 auto; */
 }
 .color-dark {
   background: rgba(35, 30, 30, 1);
@@ -124,7 +127,6 @@
 .details-icons {
   display: flex;
 }
-
 
 .navbar {
   background: black;
@@ -156,6 +158,12 @@
   } */
 }
 
+.container {
+  padding-right: 40px;
+  max-width: 95vw;
+  margin-top: 35px;
+}
+
 .hamburger {
   /* width: 400px; */
   height: 49px;
@@ -164,10 +172,38 @@
     0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
 }
 
-/* .header {
-  background: black;
-} */
-
 .nav-link {
   color: white;
+}
+
+.adjust-again {
+  /* margin-left: 450px; */
+  padding-left: 50px;
+}
+
+.main-img {
+  width: 609px;
+  /* width: 56px; */
+  height: 428px;
+}
+.add-font {
+  font-family: Montserrat;
+  font-size: 35px;
+  font-weight: 500;
+  line-height: 43px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.add-color,
+.card-1 {
+  background-color: #fff5ec;
+}
+.add-img-width {
+  /* width: 169.47px; */
+  width: fit-content;
+  height: 170px;
+}
+.card {
+  width: 295.08px;
+  height: 327px;
 }

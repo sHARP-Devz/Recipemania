@@ -1,0 +1,43 @@
+<!-- <div
+  class="d-flex w-100 align-items-center justify-content-between custom-bg"
+  [style.height.px]="height"
+>
+  <h1>{{ title }}</h1>
+
+  <span class="d-flex gap-5">
+    <a
+      class="d-flex custom-cursor text-dark text-decoration-none"
+      routerLink="/layouts/home"
+      ><p>Home</p>
+      <mat-icon class="custom-fw">keyboard_arrow_right</mat-icon></a
+    >
+    <p>{{ title }}</p>
+  </span>
+</div> -->
+
+<!-- //My Code -->
+<div
+  class="custom-bg flex-sm-row g-5 align-items-center justify-content-between"
+  [style.height.px]="height"
+>
+  <h1 class="another-margin">{{ title }}</h1>
+
+  <div class="d-flex justify-content-between">
+    <ng-container *ngFor="let breadcrumb of breadcrumbs; let last = last">
+      <ng-container *ngIf="!last">
+        <a
+          class="d-flex custom-cursor align-items-center text-dark text-decoration-none"
+          [routerLink]="breadcrumb.link"
+        >
+          <p class="another-margin-again">{{ breadcrumb.label }}</p>
+          <mat-icon class="custom-fw pe-4 mb-1">keyboard_arrow_right</mat-icon>
+        </a>
+      </ng-container>
+      <ng-container *ngIf="last">
+        <p class="another-margin-again">{{ breadcrumb.label }}</p>
+      </ng-container>
+    </ng-container>
+  </div>
+</div>
+
+<!-- pe-4 -->

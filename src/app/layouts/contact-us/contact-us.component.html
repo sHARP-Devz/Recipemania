@@ -1,0 +1,55 @@
+<main class="container-flui">
+  <div class="w-100">
+    <app-title-block [title]="'Contact Us'" [height]="114" [color]="'red'"></app-title-block>
+  </div>
+  <div class="d-flex custom-padding gap-5">
+    <div class="custom-image">
+      <img src="../../../assets/images/contact-us.png" alt="" />
+    </div>
+
+    <div>
+      <h2 class="custom-form">Contact Form</h2>
+      <form class="d-flex gap-5">
+        <div class="d-flex flex-column gap-5">
+          <span class="d-flex flex-column">
+            <label for="name">Name</label>
+            <input class="form-control" id="name" type="text" />
+          </span>
+          <span class="d-flex flex-column">
+            <label for="email">Email</label>
+            <input class="form-control" id="email" type="email" />
+          </span>
+          <span class="d-flex flex-column">
+            <label for="phone">Phone</label>
+            <input class="form-control" id="phone" type="text" />
+          </span>
+        </div>
+  
+        <div class="d-flex flex-column">
+          <label for="message">Message</label>
+          <textarea
+            class="form-control"
+            id="message"
+            cols="30"
+            rows="10"
+          ></textarea>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  
+  <div class="pt-5">
+    <h1 class="custom-text">Get in touch with any questions</h1>
+    <div class="d-flex w-100 justify-content-center gap-4" >
+      <div class="contact-tab" *ngFor="let contacts of contactData">
+        <span class="icon-circle"><mat-icon>{{contacts.icon}}</mat-icon></span>
+        <span>
+          <p>{{contacts.title}}</p>
+          <p>{{contacts.info}}</p>
+        </span>
+      </div>
+    </div>
+  </div>
+
+</main>

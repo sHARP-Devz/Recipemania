@@ -55,296 +55,69 @@
   </div>
 </nav>
 
-<!-- code
-<div class="peach-div custom-width">
-  <div class="container-lg">
-    <div class="d-flex justify-content-between blogs">
-      <div class="">
-        <h4 class="another-margin">Blogs</h4>
-      </div>
-      <div class="d-flex align-items-center">
-        <h6 class="add-margin pe-2">Home</h6>
-        <img
-          src="assets/blog-images/Polygon 5.png"
-          alt="there is no polygon here ooooo"
-          class="img-right pe-4 mb-1"
-        />
-        <h6 class="margin">Blogs</h6>
-      </div>
-    </div>
-  </div>
-</div> -->
-<app-heading></app-heading>
+<!-- <app-title-block></app-title-block> -->
+
+<app-title-block
+  [height]="100"
+  [title]="'Blogs'"
+  [breadcrumbs]="[{ label: 'Home', link: '/layouts/home' }, { label: 'Blogs' }]"
+></app-title-block>
+
 <div class="container">
-  <div class="d-flex justify-content-between mt-3 flex-column flex-lg-row">
-    <!-- new code -->
-    <div class="">
-      <div class="flex-start">
-        <div
-          class="blog-meal d-flex justify-content-between align-items-center row mb-4"
-        >
-          <div class="meal-img pe-2 col-5">
-            <img
-              src="assets/blog-images/img-1.png"
-              alt=""
-              class="img-fluid main-img w-100 h-100"
-            />
-          </div>
-          <div class="meal-details col-7">
-            <h4 class="mb-3 make-your-own fs-sm-6 fs-md-4 fs-lg-2">
-              Make your Own Chicken
-            </h4>
-            <div class="meal-details-dates d-flex mb-2">
-              <div class="detail d-flex pe-2 align-items-center">
+  <div class="row">
+    <div class="col-md-8">
+      <div *ngFor="let blog of blogsData" class="blog-item">
+        <div class="flex-start">
+          <div
+            class="blog-meal d-flex justify-content-between align-items-center row mb-4"
+          >
+            <div class="row">
+              <div class="meal-img pe-2 col-5">
                 <img
-                  src="assets/blog-images/ant-design_eye-filled.svg"
-                  alt="design"
-                  class="icon"
-                />
-                <span class="fs"> 150 </span>
-              </div>
-
-              <div class="detail d-flex align-items-center">
-                <img
-                  src="assets/blog-images/bx_bx-time-five.svg"
+                  [src]="blog.image"
                   alt=""
-                  class="icon"
+                  class="img-fluid main-img w-100 h-100"
                 />
-                <span class="fs"> Last Update: Feb 07, 2022 </span>
+              </div>
+              <div class="meal-details col-7">
+                <h4 class="mb-3 make-your-own fs-sm-6 fs-md-4 fs-lg-2">
+                  {{ blog.title }}
+                </h4>
+                <div class="meal-details-dates d-flex mb-2">
+                  <div class="detail d-flex pe-2 align-items-center">
+                    <img
+                      src="assets/blog-images/ant-design_eye-filled.svg"
+                      alt="design"
+                      class="icon"
+                    />
+                    <span class="fs">{{ blog.views }}</span>
+                  </div>
+                  <div class="detail d-flex align-items-center">
+                    <img
+                      src="assets/blog-images/bx_bx-time-five.svg"
+                      alt=""
+                      class="icon"
+                    />
+                    <span class="fs">{{ blog.time }}</span>
+                  </div>
+                </div>
+                <p class="fs-6">{{ blog.instruction }}</p>
+                <div class="main-btn p-2">READ MORE</div>
               </div>
             </div>
-            <p class="fs-6">
-              You should follow this steps carefully and be sure doing it the
-              right way.
-            </p>
-            <div class="main-btn p-2">READ MORE</div>
-          </div>
-        </div>
-      </div>
-      <div class="">
-        <div
-          class="blog-meal d-flex justify-content-between align-items-center row mb-4"
-        >
-          <div class="meal-img pe-2 col-5">
-            <img
-              src="assets/blog-images/img-1.png"
-              alt=""
-              class="img-fluid main-img w-100 h-100"
-            />
-          </div>
-          <div class="meal-details col-7">
-            <h4 class="mb-3 make-your-own fs-sm-6 fs-md-4 fs-lg-2">
-              Make your Own Chicken
-            </h4>
-            <div class="meal-details-dates d-flex mb-2">
-              <div class="detail d-flex pe-2 align-items-center">
-                <img
-                  src="assets/blog-images/ant-design_eye-filled.svg"
-                  alt="design"
-                  class="icon"
-                />
-                <span class="fs"> 150 </span>
-              </div>
-
-              <div class="detail d-flex align-items-center">
-                <img
-                  src="assets/blog-images/bx_bx-time-five.svg"
-                  alt=""
-                  class="icon"
-                />
-                <span class="fs"> Last Update: Feb 07, 2022 </span>
-              </div>
-            </div>
-            <p class="fs-6">
-              You should follow this steps carefully and be sure doing it the
-              right way.
-            </p>
-            <div class="main-btn p-2">READ MORE</div>
-          </div>
-        </div>
-      </div>
-      <div class="">
-        <div
-          class="blog-meal d-flex justify-content-between align-items-center row mb-4"
-        >
-          <div class="meal-img pe-2 col-5">
-            <img
-              src="assets/blog-images/img-1.png"
-              alt=""
-              class="img-fluid main-img w-100 h-100"
-            />
-          </div>
-          <div class="meal-details col-7">
-            <h4 class="mb-3 make-your-own fs-sm-6 fs-md-4 fs-lg-2">
-              Make your Own Chicken
-            </h4>
-            <div class="meal-details-dates d-flex mb-2">
-              <div class="detail d-flex pe-2 align-items-center">
-                <img
-                  src="assets/blog-images/ant-design_eye-filled.svg"
-                  alt="design"
-                  class="icon"
-                />
-                <span class="fs"> 150 </span>
-              </div>
-
-              <div class="detail d-flex align-items-center">
-                <img
-                  src="assets/blog-images/bx_bx-time-five.svg"
-                  alt=""
-                  class="icon"
-                />
-                <span class="fs"> Last Update: Feb 07, 2022 </span>
-              </div>
-            </div>
-            <p class="fs-6">
-              You should follow this steps carefully and be sure doing it the
-              right way.
-            </p>
-            <div class="main-btn p-2">READ MORE</div>
-          </div>
-        </div>
-      </div>
-      <div class="">
-        <div
-          class="blog-meal d-flex justify-content-between align-items-center row mb-4"
-        >
-          <div class="meal-img pe-2 col-5">
-            <img
-              src="assets/blog-images/img-1.png"
-              alt=""
-              class="img-fluid main-img w-100 h-100"
-            />
-          </div>
-          <div class="meal-details col-7">
-            <h4 class="mb-3 make-your-own fs-sm-6 fs-md-4 fs-lg-2">
-              Make your Own Chicken
-            </h4>
-            <div class="meal-details-dates d-flex mb-2">
-              <div class="detail d-flex pe-2 align-items-center">
-                <img
-                  src="assets/blog-images/ant-design_eye-filled.svg"
-                  alt="design"
-                  class="icon"
-                />
-                <span class="fs"> 150 </span>
-              </div>
-
-              <div class="detail d-flex align-items-center">
-                <img
-                  src="assets/blog-images/bx_bx-time-five.svg"
-                  alt=""
-                  class="icon"
-                />
-                <span class="fs"> Last Update: Feb 07, 2022 </span>
-              </div>
-            </div>
-            <p class="fs-6">
-              You should follow this steps carefully and be sure doing it the
-              right way.
-            </p>
-            <div class="main-btn p-2">READ MORE</div>
-          </div>
-        </div>
-      </div>
-      <div class="">
-        <div
-          class="blog-meal d-flex justify-content-between align-items-center row mb-4"
-        >
-          <div class="meal-img pe-2 col-5">
-            <img
-              src="assets/blog-images/img-1.png"
-              alt=""
-              class="img-fluid main-img w-100 h-100"
-            />
-          </div>
-          <div class="meal-details col-7">
-            <h4 class="mb-3 make-your-own fs-sm-6 fs-md-4 fs-lg-2">
-              Make your Own Chicken
-            </h4>
-            <div class="meal-details-dates d-flex mb-2">
-              <div class="detail d-flex pe-2 align-items-center">
-                <img
-                  src="assets/blog-images/ant-design_eye-filled.svg"
-                  alt="design"
-                  class="icon"
-                />
-                <span class="fs"> 150 </span>
-              </div>
-
-              <div class="detail d-flex align-items-center">
-                <img
-                  src="assets/blog-images/bx_bx-time-five.svg"
-                  alt=""
-                  class="icon"
-                />
-                <span class="fs"> Last Update: Feb 07, 2022 </span>
-              </div>
-            </div>
-            <p class="fs-6">
-              You should follow this steps carefully and be sure doing it the
-              right way.
-            </p>
-            <div class="main-btn p-2">READ MORE</div>
-          </div>
-        </div>
-      </div>
-      <div class="">
-        <div
-          class="blog-meal d-flex justify-content-between align-items-center row mb-4"
-        >
-          <div class="meal-img pe-2 col-5">
-            <img
-              src="assets/blog-images/img-1.png"
-              alt=""
-              class="img-fluid main-img w-100 h-100"
-            />
-          </div>
-          <div class="meal-details col-7">
-            <h4 class="mb-3 make-your-own fs-sm-6 fs-md-4 fs-lg-2">
-              Make your Own Chicken
-            </h4>
-            <div class="meal-details-dates d-flex mb-2">
-              <div class="detail d-flex pe-2 align-items-center">
-                <img
-                  src="assets/blog-images/ant-design_eye-filled.svg"
-                  alt="design"
-                  class="icon"
-                />
-                <span class="fs"> 150 </span>
-              </div>
-
-              <div class="detail d-flex align-items-center">
-                <img
-                  src="assets/blog-images/bx_bx-time-five.svg"
-                  alt=""
-                  class="icon"
-                />
-                <span class="fs"> Last Update: Feb 07, 2022 </span>
-              </div>
-            </div>
-            <p class="fs-6">
-              You should follow this steps carefully and be sure doing it the
-              right way.
-            </p>
-            <div class="main-btn p-2">READ MORE</div>
           </div>
         </div>
       </div>
     </div>
-    <div class="most-visited-blogs px-2">
+
+    <div class="col-md-4 most-visited-blogs px-5">
       <h4 class="visited-blogs">Most visited Blogs</h4>
-
-      <p class="blog-item">Make your own bread</p>
-      <p class="blog-item">How to decorate cookies</p>
-      <p class="blog-item">How to decorate cookies</p>
-      <p class="blog-item">How to make sushi</p>
-      <p class="blog-item">How to decorate cookies</p>
-      <p class="blog-item">How to decorate cookies</p>
-      <p class="blog-item">Make a party</p>
-      <p class="blog-item">How to be healthy</p>
-      <p class="blog-item">How to make cupcake</p>
+      <p class="blog-item" *ngFor="let visitedBlog of visitedBlogs">
+        {{ visitedBlog }}
+      </p>
     </div>
-    <!-- </div> -->
   </div>
 </div>
+
+<!-- px-5 -->
+<!-- "d-flex justify-content-between mt-3 flex-column flex-lg-row" -->
