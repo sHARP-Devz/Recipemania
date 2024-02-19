@@ -16,6 +16,7 @@ import { TitleBlockComponent } from '../shared/components/title-block/title-bloc
 import { SocialsComponent } from '../shared/components/socials/socials.component';
 import { FooterComponent } from '../shared/components/footer/footer.component';
 import { PrimaryButtonComponent } from '../shared/components/primary-button/primary-button.component';
+import { NavbarComponent } from '../shared/components/navbar/navbar.component';
 
 
 @NgModule({
@@ -36,7 +37,8 @@ import { PrimaryButtonComponent } from '../shared/components/primary-button/prim
     TitleBlockComponent,
     SocialsComponent,
     FooterComponent,
-    PrimaryButtonComponent
+    PrimaryButtonComponent,
+    NavbarComponent
   ],
   exports: [
     LandingPageComponent,
