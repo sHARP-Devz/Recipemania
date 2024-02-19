@@ -12,6 +12,7 @@
 .custom-cursor {
   cursor: pointer;
 }
+<<<<<<< HEAD
 .another-margin {
   font-family: Montserrat;
   font-size: 25px;
@@ -42,3 +43,14 @@
     display: none;
   }
 }
+=======
+@media screen and (max-width: 450px) {
+  .custom-bg{
+    padding: 0 20px;
+    height: 70px;
+  }
+  .custom-bg h1{
+    font-size: 15px;
+  }
+}
+>>>>>>> d584fd92c9970f18cebbe0f28164fef816c289cd

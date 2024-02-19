@@ -13,10 +13,17 @@ import { CategoriesComponent } from '../shared/components/categories/categories.
 import { FootcatComponent } from '../shared/components/footcat/footcat.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { TitleBlockComponent } from '../shared/components/title-block/title-block.component';
+<<<<<<< HEAD
 import { BlogsComponent } from './blogs/blogs.component';
 import { blogsData } from './blogs/blogsData';
 import { BlogsDescriptionComponent } from './blogs-description/blogs-description.component';
 import { NavbarModule } from '../shared/components/navbar/navbar/navbar.module';
+=======
+import { SocialsComponent } from '../shared/components/socials/socials.component';
+import { FooterComponent } from '../shared/components/footer/footer.component';
+import { PrimaryButtonComponent } from '../shared/components/primary-button/primary-button.component';
+
+>>>>>>> d584fd92c9970f18cebbe0f28164fef816c289cd
 
 @NgModule({
   declarations: [
@@ -35,8 +42,14 @@ import { NavbarModule } from '../shared/components/navbar/navbar/navbar.module';
     CategoriesComponent,
     FootcatComponent,
     TitleBlockComponent,
+<<<<<<< HEAD
     BlogsComponent,
     NavbarModule,
+=======
+    SocialsComponent,
+    FooterComponent,
+    PrimaryButtonComponent
+>>>>>>> d584fd92c9970f18cebbe0f28164fef816c289cd
   ],
   exports: [LandingPageComponent, RecipePageComponent],
 })
