@@ -1,0 +1,46 @@
+.card-container{
+	width: 387px;
+}
+.user-details{
+  height: 228px;
+  background-color: var(--primary-color);
+}
+.user-image{
+  width: 118px;
+  height: 115.69px;
+  border-radius: 116.84px;
+}
+.user-name{
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #FFFFFF
+}
+.status{
+font-size: 20px;
+font-weight: 600;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: left;
+color: #FFFFFF
+}
+.navigation{
+  height: 360px;
+  background-color: var(--accent-color);
+}
+
+.navigation ul{
+  list-style-type: none;
+}
+
+.navigation ul li a{
+  text-decoration: none;
+  color: #282B30;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
