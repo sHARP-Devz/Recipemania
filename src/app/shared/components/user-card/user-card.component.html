@@ -1,0 +1,20 @@
+<div class="card-container  ms-5 mt-2 me-2">
+  <div *ngFor= "let user of users"class="user-details d-flex py-5 px-4 align-content-center">
+    <img class="user-image" [src]= "user.url" alt="" >
+    <div class="user-info m-4">
+      <p class="user-name">{{user.name}}</p>
+      <p class="status">User</p>
+  </div>
+  </div>
+
+  <div class="navigation pt-3 pe-0">
+    <ul *ngFor= "let icon of icons; let i = index" class="ms-3">
+      <li class="my-5">
+        <a href="#">
+          <img [src]= "icon.url" alt="" class="mx-3">
+          {{icon.name}}</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
