@@ -13,14 +13,21 @@ import { CategoriesComponent } from '../shared/components/categories/categories.
 import { FootcatComponent } from '../shared/components/footcat/footcat.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { TitleBlockComponent } from '../shared/components/title-block/title-block.component';
-
+import { BlogsComponent } from './blogs/blogs.component';
+import { BlogsDescriptionComponent } from './blogs-description/blogs-description.component';
+import { SocialsComponent } from '../shared/components/socials/socials.component';
+import { FooterComponent } from '../shared/components/footer/footer.component';
+import { PrimaryButtonComponent } from '../shared/components/primary-button/primary-button.component';
+import { NavbarComponent } from '../shared/components/navbar/navbar.component';
 
 @NgModule({
   declarations: [
     LayoutsComponent,
     LandingPageComponent,
     RecipePageComponent,
-    ContactUsComponent
+    ContactUsComponent,
+    BlogsDescriptionComponent,
+    BlogsComponent,
   ],
   imports: [
     CommonModule,
@@ -30,12 +37,13 @@ import { TitleBlockComponent } from '../shared/components/title-block/title-bloc
     LoginComponent,
     CategoriesComponent,
     FootcatComponent,
-    TitleBlockComponent
+    TitleBlockComponent,
+    
+    SocialsComponent,
+    FooterComponent,
+    PrimaryButtonComponent,
+    NavbarComponent,
   ],
-  exports: [
-    LandingPageComponent,
-    RecipePageComponent
-
-  ]
+  exports: [LandingPageComponent, RecipePageComponent],
 })
-export class LayoutsModule { }
+export class LayoutsModule {}

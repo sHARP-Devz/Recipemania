@@ -1,0 +1,10 @@
+.custum-btn{
+  width: fit-content;
+  color: #FFF;
+  font-size: 20px;
+}
+@media screen and (max-width: 450px) {
+  .custum-btn{
+    font-size: 15px;
+  }
+}

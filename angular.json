@@ -25,12 +25,18 @@
               "src/assets"
             ],
             "styles": [
+
               "@angular/material/prebuilt-themes/deeppurple-amber.css",
               "src/styles.css",
               "node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
             "scripts": [
+<<<<<<< HEAD
+              "node_modules/bootstrap/dist/js/bootstrap.min.js"
+
+=======
               "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+>>>>>>> d33f5c2f3e7fcaedd69fa9f4ee9c852ad5a84bb3
             ]
           },
           "configurations": {
@@ -103,6 +109,10 @@
   },
   "cli": {
 <<<<<<< HEAD
+    "analytics": "0be8b08d-dfd2-4f26-aa77-512a9471ae29",
+=======
+<<<<<<< HEAD
+>>>>>>> d33f5c2f3e7fcaedd69fa9f4ee9c852ad5a84bb3
     "analytics": "80cbeeab-9f6f-481b-b539-6c1ad51ff07e"
 =======
     "analytics": "d159d620-0cb7-404e-ac3a-5c344b390710"

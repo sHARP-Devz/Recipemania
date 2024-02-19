@@ -1,0 +1,176 @@
+.recipe {
+  color: rgba(255, 255, 255, 1);
+  font-family: Nunito;
+  font-size: 41px;
+  font-weight: 700;
+  letter-spacing: 0em;
+}
+
+.mania {
+  color: rgba(253, 164, 122, 1);
+  font-family: Nunito;
+  font-size: 27px;
+  font-weight: 700;
+  letter-spacing: 0em;
+}
+
+.another-margin,
+.add-margin,
+.margin {
+  font-family: Montserrat;
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 43px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.nav-item {
+  font-family: Montserrat;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.make-your-own {
+  font-family: Montserrat;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.fs {
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0em;
+}
+
+.icon {
+  width: 16.17px;
+  height: 16.17px;
+}
+
+.fs-6 {
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+}
+.main-btn {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0em;
+}
+
+.visited-blogs {
+  font-family: Montserrat;
+  font-size: 35px;
+  font-weight: 500;
+  line-height: 43px;
+  letter-spacing: 0em;
+}
+.blog-item {
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+}
+.move-right {
+  margin-left: 5px;
+}
+
+.move-right-again {
+  margin-left: 55px;
+}
+
+.custom-width {
+  width: 100%;
+}
+.color-dark {
+  background: rgba(35, 30, 30, 1);
+  height: 110px;
+}
+
+.embed {
+  display: flex;
+  align-items: center;
+}
+.make-margin {
+  margin-right: 55px;
+}
+
+.blogs {
+  /* text-align: center; */
+  padding-top: 40px;
+  padding-left: 50px;
+}
+.peach-div {
+  background-color: rgba(226, 219, 219, 1);
+  height: 110px;
+  margin-top: 60px;
+}
+.details-icons {
+  display: flex;
+}
+
+.navbar {
+  background: black;
+}
+
+@media screen and (max-width: 992px) {
+  .navbar-contain {
+    background: white;
+  }
+  .navbar-nav li a {
+    color: black !important;
+    padding-top: 15px;
+  }
+
+  .navbar-nav {
+    padding-top: 15px;
+    /* margin-bottom: 200px; */
+  }
+  .make-your-own {
+    font-size: 20px;
+  }
+
+  .navbar {
+    background: white;
+  }
+
+  /* .navbar {
+    background: black;
+  } */
+}
+
+.container {
+  padding-right: 40px;
+  max-width: 95vw;
+  margin-top: 35px;
+}
+
+.hamburger {
+  /* width: 400px; */
+  height: 49px;
+  background: #fda47a;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25),
+    0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+}
+
+/* .header {
+  background: black;
+} */
+
+.nav-link {
+  color: white;
+}

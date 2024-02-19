@@ -1,0 +1,124 @@
+<!-- <nav class="navbar navbar-contain navbar-expand-lg">
+  <div class="container-fluid">
+    <div class="d-flex move-right-again">
+      <img src="assets/blog-images/Group 138.svg" class="img-fluid" alt="" />
+      <span class="move-right">
+        <h3 class="recipe">Recipe</h3>
+        <h4 class="mania">Mania</h4>
+      </span>
+    </div>
+
+    <div
+      class="hamburger d-flex w-100 justify-content-between d-lg-none align-items-center px-3"
+    >
+      <p class="title">Menu</p>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul
+        class="navbar-nav ms-auto mb-2 mb-lg-0 make-margin text-white text-dark"
+      >
+        <li class="nav-item me-2">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item me-2">
+          <span class="embed">
+            <a class="nav-link" href="#">Categories</a>
+            <img src="assets/blog-images/Vector.svg" alt="" class="img-right" />
+          </span>
+        </li>
+        <li class="nav-item me-2">
+          <a class="nav-link" href="#">Recipes</a>
+        </li>
+        <li class="nav-item me-2">
+          <a class="nav-link" href="#">Blogs</a>
+        </li>
+        <li class="nav-item me-2">
+          <a class="nav-link pad-this" href="#">Contact Us</a>
+        </li>
+        <li class="nav-item me-2">
+          <a class="nav-link" href="#">Login/Register</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav> -->
+
+<!-- <app-title-block></app-title-block> -->
+<app-navbar [backgroundColor]="'#000'" [textColor]="'#FFF'"></app-navbar>
+<app-title-block
+  [height]="100"
+  [title]="'Blogs'"
+  [breadcrumbs]="[{ label: 'Home', link: '/layouts/home' }, { label: 'Blogs' }]"
+></app-title-block>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-8">
+      <div *ngFor="let blog of blogsData" class="blog-item">
+        <div class="flex-start">
+          <div
+            class="blog-meal d-flex justify-content-between align-items-center row mb-4"
+          >
+            <div class="row">
+              <div class="meal-img pe-2 col-5">
+                <img
+                  [src]="blog.image"
+                  alt=""
+                  class="img-fluid main-img w-100 h-100"
+                />
+              </div>
+              <div class="meal-details col-7">
+                <h4 class="mb-3 make-your-own fs-sm-6 fs-md-4 fs-lg-2">
+                  {{ blog.title }}
+                </h4>
+                <div class="meal-details-dates d-flex mb-2">
+                  <div class="detail d-flex pe-2 align-items-center">
+                    <img
+                      src="assets/blog-images/ant-design_eye-filled.svg"
+                      alt="design"
+                      class="icon"
+                    />
+                    <span class="fs">{{ blog.views }}</span>
+                  </div>
+                  <div class="detail d-flex align-items-center">
+                    <img
+                      src="assets/blog-images/bx_bx-time-five.svg"
+                      alt=""
+                      class="icon"
+                    />
+                    <span class="fs">{{ blog.time }}</span>
+                  </div>
+                </div>
+                <p class="fs-6">{{ blog.instruction }}</p>
+                <div class="main-btn p-2">READ MORE</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 most-visited-blogs px-5">
+      <h4 class="visited-blogs">Most visited Blogs</h4>
+      <p class="blog-item" *ngFor="let visitedBlog of visitedBlogs">
+        {{ visitedBlog }}
+      </p>
+    </div>
+  </div>
+</div>
+<app-socials></app-socials>
+<app-footer></app-footer>
+<!-- px-5 -->
+<!-- "d-flex justify-content-between mt-3 flex-column flex-lg-row" -->

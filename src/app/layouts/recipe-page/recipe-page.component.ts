@@ -23,6 +23,9 @@ export class RecipePageComponent {
   // PAGINATION LOGIC
   @Input() rating: number = 0;
   maxRating: number = 5;
+  
+  
+  categoriesShow: boolean = false;
 
   get filledStars(): number[] {
     const percentage = (this.rating / this.maxRating) * 100;
@@ -33,5 +36,9 @@ export class RecipePageComponent {
   get emptyStars(): number[] {
     const numberOfStars = this.maxRating - this.filledStars.length;
     return Array(numberOfStars).fill(0);
+  }
+
+  toggleCategories(){
+    this.categoriesShow = !this.categoriesShow
   }
 }

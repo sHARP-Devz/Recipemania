@@ -1,15 +1,32 @@
 <main class="container-flui">
+  <app-navbar [backgroundColor]="'#000'" [textColor]="'#FFF'"></app-navbar>
   <div class="w-100">
     <app-title-block [title]="'Contact Us'" [height]="114" [color]="'red'"></app-title-block>
   </div>
-  <div class="d-flex custom-padding gap-5">
+  <div class="d-flex custom-padding">
     <div class="custom-image">
       <img src="../../../assets/images/contact-us.png" alt="" />
     </div>
+  </div>
 
-    <div>
+  
+  <div class="py-5">
+    <h1 class="custom-text">Get in touch with any questions</h1>
+    <div class="d-flex w-100 justify-content-center gap-4" >
+      <div class="contact-tab" *ngFor="let contacts of contactData">
+        <span class="icon-circle"><mat-icon>{{contacts.icon}}</mat-icon></span>
+        <span>
+          <p>{{contacts.title}}</p>
+          <p>{{contacts.info}}</p>
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <div class="w-100 d-flex flex-column align-items-center custom-bg">
+    <form class="d-flex flex-column align-items-start custom-look">
       <h2 class="custom-form">Contact Form</h2>
-      <form class="d-flex gap-5">
+      <div class="custom-flex">
         <div class="d-flex flex-column gap-5">
           <span class="d-flex flex-column">
             <label for="name">Name</label>
@@ -25,7 +42,7 @@
           </span>
         </div>
   
-        <div class="d-flex flex-column">
+        <div class="d-flex flex-column align-items-end">
           <label for="message">Message</label>
           <textarea
             class="form-control"
@@ -33,23 +50,13 @@
             cols="30"
             rows="10"
           ></textarea>
+          <app-primary-button class="mt-3" [label]="'SEND A MESSAGE'"></app-primary-button>
         </div>
-      </form>
-    </div>
-  </div>
-
-  
-  <div class="pt-5">
-    <h1 class="custom-text">Get in touch with any questions</h1>
-    <div class="d-flex w-100 justify-content-center gap-4" >
-      <div class="contact-tab" *ngFor="let contacts of contactData">
-        <span class="icon-circle"><mat-icon>{{contacts.icon}}</mat-icon></span>
-        <span>
-          <p>{{contacts.title}}</p>
-          <p>{{contacts.info}}</p>
-        </span>
       </div>
-    </div>
+
+    </form>
   </div>
 
 </main>
+<app-socials></app-socials>
+<app-footer></app-footer>
