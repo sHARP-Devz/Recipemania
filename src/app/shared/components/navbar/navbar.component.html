@@ -1,29 +1,47 @@
-<header>
- <div class="row">
-  <div class="col-md-3 col-sm-3 col-3">
-   <div class="logo">
-    <img src="assets/images/logo.svg" width="54px" height="54px" alt="">
-    <span class="mx-2">Recipe</span>
-    <p class="man">Mania</p>
-   </div>
+<nav class="navbar navbar-expand-lg" [style.background-color]="backgroundColor">
+  <div class="container my-2 header-container">
+    <a class="navbar-brand d-flex" href="#">
+      <img  class="brand-logo pe-2" src="../../assets/images/recipe_logo.png">
+      <div class=" d-flex flex-column p-0 logo-name fw-bold">
+        <span class="fs-3 logo-name-recipe p-0">Recipe</span>
+        <p class="fs-5 p-0 " [style.color]="textColor">Mania</p>
+      </div>
+    </a>
+
+    <div class="hamburger container d-flex align-items-center justify-content-between d-lg-none fw-bold">
+      <p class="mt-3">MENU</p>
+      <button (click) = "showMenu()" class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+
+    <div class="nav-menu" id="navbarSupportedContent" *ngIf="!isMobile || toggle">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-bold cursor-pointer list-unstyled" [style.color]="textColor">
+        <li class="nab-item pe-2">
+          <a class="nav-link" [style.color]="textColor" href="#">Home</a>
+        </li>
+        <li class="nav-item pe-2" >
+          <a class="nav-link " [style.color]="textColor"href="#">Categories</a>
+        </li>
+        <li class="nav-item pe-2">
+          <a routerLink = "/layouts/recipe" [style.color]="textColor" class="nav-link">Recipes</a>
+        </li>
+        <li  class="nav-item pe-2">
+          <a class="nav-link" [style.color]="textColor" href="#">Blogs</a>
+        </li>
+        <li router class="nav-item pe-2">
+          <a class="nav-link" [style.color]="textColor" href="#">Contact Us</a>
+        </li>
+        <li (click)="loginModaltoggle(true)" class="nav-item">
+          <a class="nav-link cursor-pointer" [style.color]="textColor">Login/Register</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="profile d-flex align-items-center"  [style.display]="displayDiv">
+      <img class="profile-dp me-2" src="../../assets/images/dp.png">
+      <mat-icon [style.color]="textColor">keyboard_arrow_down</mat-icon>
+
+    </div>
   </div>
-  <div class="col-md-9 col-sm-9 col-9 text-end">
-   <div class="menu">
-    <ul>
-     <li>Home</li>
-     <li>
-      <select>
-        <option>Categories</option>
-        <option></option>
-        <option></option>
-      </select>
-    </li>
-     <li>Recipes</li>
-     <li>Blogs</li>
-     <li>Contact Us</li>
-     <li>Login / Register</li>
-    </ul>
-   </div>
-  </div>
- </div>
-</header>
+</nav>
