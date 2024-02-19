@@ -38,6 +38,10 @@
       <button (click)="toggleLoginFace()" class="btn btn-custom">LOGIN</button>
     </form>
 
-    <p class="mt-3">Don't have an account ? <span style='color:#F00'>Register Now</span></p>
+    <p class="mt-3">Don't have an account ? <span style='color:#F00' (click)="loginModaltoggle(true)">Register Now</span></p>
   </div>
 </main>
+
+<app-modal [isOpen]="loginModalOpen" (isClose)="loginModaltoggle(false)">
+  <app-register></app-register>
+</app-modal>
