@@ -200,10 +200,151 @@
 }
 .add-img-width {
   /* width: 169.47px; */
-  width: fit-content;
-  height: 170px;
+  width: 100.47;
+  height: 100.6;
+  /* height: 170px; */
 }
-.card {
+.add-width-again {
   width: 295.08px;
   height: 327px;
+  border-radius: 50%;
+  background-color: red;
+}
+.add-radius {
+  border-radius: 125px;
+}
+.card-title {
+  font-family: Montserrat;
+  font-size: 31px;
+  font-weight: 500;
+  line-height: 37px;
+  letter-spacing: 0em;
+}
+.change-font {
+  font-family: Montserrat;
+  font-size: 23px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0em;
+}
+.add-comment {
+  font-family: Montserrat;
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0em;
+}
+
+.custom-icon {
+  /* color: red; */
+  color: #ff7b01b2;
+
+  font-size: 40px;
+  width: 45px;
+  height: 45px;
+}
+
+.font-1 {
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0em;
+}
+.font-2 {
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+}
+.square-div {
+  background: #c4c4c499;
+  width: 100px;
+  height: 100px;
+  background-color: #f0f0f0;
+  width: 16.6px;
+  height: 17.8px;
+}
+
+.custom-icon-2 {
+  color: #ff0000;
+}
+.squared-div {
+  background: #c4c4c499;
+  width: 100px;
+  height: 80px;
+  /* width: 16.6px; */
+  /* height: 17.8px; */
+}
+.expand-width {
+  width: 610px;
+  height: 47px;
+}
+.margin-up {
+  margin-bottom: 200px;
+}
+.disqus-margin {
+  margin-left: 150px;
+}
+.match-down {
+  margin-top: 200px;
+}
+.custom-icon-3 {
+  /* color: red; */
+  color: #282b30;
+
+  font-size: 80px;
+  width: 95px;
+  height: 85px;
+}
+.circle-div {
+  width: 35px;
+  height: 35px;
+  border-radius: 50px;
+  background-color: #4267b2;
+}
+.circle-div-1 {
+  width: 35px;
+  height: 35px;
+  border-radius: 50px;
+  background-color: #00acee;
+}
+.circle-div-2 {
+  width: 35px;
+  height: 35px;
+  border-radius: 50px;
+  background: linear-gradient(
+    190.75deg,
+    #8a3ab9 7.98%,
+    #bc2a8d 29.16%,
+    #fccc63 55.96%,
+    rgba(251, 173, 80, 0.82) 100.55%
+  );
+}
+.circled-div-3 {
+  width: 20px;
+  height: 20px;
+  border-radius: 50px;
+  background: #282b3096;
+}
+
+.reduce-size {
+  width: 26px;
+  height: 26px;
+}
+
+.custom-icon-4 {
+  color: #ff7b01b2;
+
+  /* font-size: 40px;
+  width: 45px;
+  height: 45px; */
+}
+.include-margins {
+  margin-left: 30px;
+}
+
+.add-gap {
+  gap: 80px;
 }
