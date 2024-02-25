@@ -9,16 +9,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatIconModule } from '@angular/material/icon';
 import { CategoriesComponent } from './shared/components/categories/categories.component';
 import { FootcatComponent } from './shared/components/footcat/footcat.component';
-import { BlogsDescriptionComponent } from './layouts/blogs-description/blogs-description.component';
-import { NavbarModule } from './shared/components/navbar/navbar/navbar.module';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    AuthComponent,
-    // BlogsDescriptionComponent,
-    // NavbarComponent,
-  ],
+  declarations: [AppComponent, AuthComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -26,7 +19,6 @@ import { NavbarModule } from './shared/components/navbar/navbar/navbar.module';
     MatIconModule,
     CategoriesComponent,
     FootcatComponent,
-    NavbarModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

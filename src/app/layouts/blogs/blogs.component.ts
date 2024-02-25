@@ -5,8 +5,6 @@ import { blogsData, visitedBlogs } from './blogsData';
 
 @Component({
   selector: 'app-blogs',
-  standalone: true,
-  imports: [CommonModule, TitleBlockComponent],
   templateUrl: './blogs.component.html',
   styleUrls: ['./blogs.component.css'],
 })
