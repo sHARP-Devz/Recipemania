@@ -27,7 +27,7 @@ import { NavbarComponent } from '../shared/components/navbar/navbar.component';
     RecipePageComponent,
     ContactUsComponent,
     BlogsDescriptionComponent,
-    BlogsComponent,
+    BlogsComponent
   ],
   imports: [
     CommonModule,

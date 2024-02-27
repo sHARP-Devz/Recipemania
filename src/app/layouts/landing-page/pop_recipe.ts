@@ -1,18 +1,18 @@
 export const popular_recipe_data = [
     {
-        img: 'beef.png',
+        img: 'assets/images/popular_recipes/beef.png',
         recipe_name: 'Garlic Shrimps'
     },
     {
-        img: 'beef.png',
+        img: 'assets/images/popular_recipes/beef.png',
         recipe_name: 'Garlic Shrimps'
     },
     {
-        img: 'beef.png',
+        img: 'assets/images/popular_recipes/beef.png',
         recipe_name: 'Garlic Shrimps'
     },
     {
-        img: 'beef.png',
+        img: 'assets/images/popular_recipes/beef.png',
         recipe_name: 'Garlic Shrimps'
     }
 ]

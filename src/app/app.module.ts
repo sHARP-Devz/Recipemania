@@ -24,7 +24,7 @@ import { FootcatComponent } from './shared/components/footcat/footcat.component'
     BrowserAnimationsModule,
     MatIconModule,
     CategoriesComponent,
-    FootcatComponent
+    FootcatComponent,
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -3,21 +3,21 @@ import { CommonModule } from '@angular/common';
 
 import { AuthRoutingModule } from './auth-routing.module';
 import { MatIconModule } from '@angular/material/icon';
-import { RegisterComponent } from './register/register.component'
-import { LoginComponent } from './login/login.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
   declarations: [
-    RegisterComponent,
   ],
   imports: [
     CommonModule,
     AuthRoutingModule,
-    MatIconModule
+    MatIconModule,
+    HttpClientModule,
+    FormsModule
   ],
   exports: [
-    RegisterComponent,
   ]
 })
 export class AuthModule { }
