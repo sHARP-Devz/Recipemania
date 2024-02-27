@@ -65,8 +65,8 @@
   font-family: Montserrat;
   font-size: 20px;
   font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0em;
+  /* line-height: 24px; */
+  /* letter-spacing: 0em; */
 }
 .main-btn {
   font-family: Montserrat;
@@ -132,7 +132,38 @@
   background: black;
 }
 
+.font-title {
+  font-family: Montserrat;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 43px;
+  letter-spacing: 0em;
+}
+
 @media screen and (max-width: 992px) {
+  .detail span {
+    text-wrap: nowrap;
+    font-size: 10px;
+  }
+
+  mat-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .font-title {
+    font-family: Montserrat;
+    font-size: 20px;
+    /* font-weight: 400; */
+    /* line-height: 18px;
+    letter-spacing: 0em; */
+  }
+
+  .custom-icon-4 {
+    font-size: 12px;
+    color: #ff7b01b2;
+  }
   .navbar-contain {
     background: white;
   }
@@ -143,7 +174,6 @@
 
   .navbar-nav {
     padding-top: 15px;
-    /* margin-bottom: 200px; */
   }
   .make-your-own {
     font-size: 20px;
@@ -151,6 +181,11 @@
 
   .navbar {
     background: white;
+  }
+  .custom-icon-4 {
+    /* font-size: 13px; */
+    /* width: 11.75px; */
+    /* height: 11.75px; */
   }
 
   /* .navbar {
@@ -174,6 +209,15 @@
 
 .nav-link {
   color: white;
+}
+
+.disqus-margin-2 {
+  margin-bottom: -200px;
+}
+
+.input-text {
+  width: 427px;
+  /* height: 47px; */
 }
 
 .adjust-again {
@@ -298,6 +342,9 @@
   width: 95px;
   height: 85px;
 }
+.div {
+  background-color: red;
+}
 .circle-div {
   width: 35px;
   height: 35px;
@@ -334,17 +381,35 @@
   height: 26px;
 }
 
-.custom-icon-4 {
-  color: #ff7b01b2;
-
-  /* font-size: 40px;
-  width: 45px;
-  height: 45px; */
+/* .detail span {
+  text-wrap: nowrap;
+  font-size: 10px;
 }
+
+mat-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+.custom-icon-4 {
+  /* font-size: 12px; */
+  color: #ff7b01b2;
+}
+
 .include-margins {
   margin-left: 30px;
 }
 
 .add-gap {
   gap: 80px;
+}
+
+@media only screen and (max-width: 992px) {
+  .pb-3 {
+    background-color: red;
+  }
+  .responsive {
+    display: none;
+  }
 }

@@ -1,296 +1,40 @@
-<nav class="navbar navbar-contain navbar-expand-lg">
-  <div class="container-fluid">
-    <div class="d-flex move-right-again">
-      <img src="assets/blog-images/Group 138.svg" class="img-fluid" alt="" />
-      <span class="move-right">
-        <h3 class="recipe">Recipe</h3>
-        <h4 class="mania">Mania</h4>
-      </span>
-    </div>
-
-    <div
-      class="hamburger d-flex w-100 justify-content-between d-lg-none align-items-center px-3"
-    >
-      <p class="title">Menu</p>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    </div>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 make-margin">
-        <li class="nav-item me-2">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item me-2">
-          <span class="embed">
-            <a class="nav-link" href="#">Categories</a>
-            <img src="assets/blog-images/Vector.svg" alt="" class="img-right" />
-          </span>
-        </li>
-        <li class="nav-item me-2">
-          <a class="nav-link" href="#">Recipes</a>
-        </li>
-        <li class="nav-item me-2">
-          <a class="nav-link" href="#">Blogs</a>
-        </li>
-        <li class="nav-item me-2">
-          <a class="nav-link pad-this" href="#">Contact Us</a>
-        </li>
-        <li class="nav-item me-2">
-          <a class="nav-link" href="#">Login/Register</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-<div class="mt-5">
-  <app-title-block
-    [height]="80"
-    [title]="'Make your own chicken'"
-    [breadcrumbs]="[
-      { label: 'Home', link: '/layouts/home' },
-      { label: 'Blogs', link: '/layouts/blogs' },
-      { label: 'Make your own chicken', link: '/layouts/blogs' }
-    ]"
-  ></app-title-block>
-</div>
-
-<div class="container-fluid py-3 mx-5 adjust-again">
-  <div class="row">
-    <div class="col-md-12">
-      <div *ngFor="let blog of blogsData" class="blog-item">
-        <div>
-          <div class="blog-meal row mb-4">
             <div class="row">
-              <div class="meal-details col-7">
-                <h4 class="mb-3 make-your-own fs-sm-6 fs-md-4 fs-lg-2">
-                  {{ blog.title }}
-                </h4>
-                <div class="meal-details-dates d-flex mb-2">
-                  <div class="detail d-flex pe-2 align-items-center">
-                    <img
-                      src="assets/blog-images/ant-design_eye-filled.svg"
-                      alt="design"
-                      class="icon"
-                    />
-                    <span class="fs">{{ blog.views }}</span>
-                  </div>
-                  <div class="detail d-flex align-items-center">
-                    <img
-                      src="assets/blog-images/bx_bx-time-five.svg"
-                      alt=""
-                      class="icon"
-                    />
-                    <span class="fs">{{ blog.time }}</span>
-                  </div>
-                  <!-- main-img -->
-                  <div class="meal-img pe-2">
-                    <img [src]="blog.image" alt="" class="img-fluid main-img" />
-                    <p class="fs-6">{{ blog.description }}</p>
-                  </div>
-                </div>
-              </div>
+              <p>LOG IN WITH</p>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- <div class="row">
-      <div class="container mx-auto">
-        <p class="add-font">You may also like</p>
-        <div class="d-flex justify-content-center align-items-center gap-5">
-          <div class="add-width">
-            <div class="card add-color">
-              <div class="px-3 my-3">
-                <img
-                  src="assets/blog-images/Rectangle 534.svg"
-                  class="add-img-width img-fluid"
-                  alt="e no dey here"
-                />
-
-                <h2 class="card-title">Chicken</h2>
-
-                <div class="card-text d-flex align-items-center mb-3 gap-2">
-                  <div>
-                    <img src="assets/blog-images/Ellipse 54.svg" alt="" />
-                  </div>
-                  <div class="change-font">Bambam</div>
+            <div class="container-fluid">
+              <!-- disqus-margin -->
+              <div class="d-flex gap-3 disqus-margin-2">
+                <div
+                  class="circle-div d-flex align-items-center justify-content-center"
+                >
+                  <img
+                    src="assets/blog-images/Vector (7).svg"
+                    alt=""
+                    class="reduce-size"
+                  />
                 </div>
-                <div class="d-flex justify-content-center align-items-center">
-                  <div>
-                    <img src="assets/blog-images/Star 5.svg" alt="" />
-                  </div>
-                  <div>
-                    <img src="assets/blog-images/Star 5.svg" alt="" />
-                  </div>
-                  <div>
-                    <img src="assets/blog-images/Star 5.svg" alt="" />
-                  </div>
-                  <div>
-                    <img src="assets/blog-images/Star 8.svg" alt="" />
-                  </div>
+                <div
+                  class="circle-div-1 d-flex align-items-center justify-content-center"
+                >
+                  <img
+                    src="assets/blog-images/Vector (8).svg"
+                    alt=""
+                    class="reduce-size"
+                  />
                 </div>
-              </div>
-            </div>
-          </div>
-          <div class="add-width">
-            <div class="card add-color">
-              <div class="px-3 my-3">
-                <img
-                  src="assets/blog-images/Rectangle 534.svg"
-                  class="add-img-width img-fluid"
-                  alt="e no dey here"
-                />
-
-                <h2 class="card-title">Chicken</h2>
-
-                <div class="card-text d-flex align-items-center mb-3 gap-2">
-                  <div>
-                    <img src="assets/blog-images/Ellipse 54.svg" alt="" />
-                  </div>
-                  <div class="change-font">Bambam</div>
+                <div
+                  class="circle-div-2 d-flex align-items-center justify-content-center"
+                >
+                  <img
+                    src="assets/blog-images/Vector (9).svg"
+                    alt=""
+                    class="reduce-size"
+                  />
                 </div>
-                <div class="d-flex justify-content-center align-items-center">
-                  <div>
-                    <img src="assets/blog-images/Star 5.svg" alt="" />
-                  </div>
-                  <div>
-                    <img src="assets/blog-images/Star 5.svg" alt="" />
-                  </div>
-                  <div>
-                    <img src="assets/blog-images/Star 5.svg" alt="" />
-                  </div>
-                  <div>
-                    <img src="assets/blog-images/Star 8.svg" alt="" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="add-width">
-            <div class="card add-color">
-              <div class="px-3 my-3">
-                <img
-                  src="assets/blog-images/Rectangle 534.svg"
-                  class="add-img-width img-fluid"
-                  alt="e no dey here"
-                />
-
-                <h2 class="card-title">Chicken</h2>
-
-                <div class="card-text d-flex align-items-center mb-3 gap-2">
-                  <div>
-                    <img src="assets/blog-images/Ellipse 54.svg" alt="" />
-                  </div>
-                  <div class="change-font">Bambam</div>
-                </div>
-                <div class="d-flex justify-content-center align-items-center">
-                  <div>
-                    <img src="assets/blog-images/Star 5.svg" alt="" />
-                  </div>
-                  <div>
-                    <img src="assets/blog-images/Star 5.svg" alt="" />
-                  </div>
-                  <div>
-                    <img src="assets/blog-images/Star 5.svg" alt="" />
-                  </div>
-                  <div>
-                    <img src="assets/blog-images/Star 8.svg" alt="" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <h3 class="add-comment my-3">Add your comment</h3>
-    </div>
-    <div class="container-fluid">
-      <div class="text-center mx-auto">
-        <h3 class="font-1">What do you think?</h3>
-
-        <p class="font-2">23 Responses</p>
-      </div>
-
-      <div>
-        <div class="d-flex justify-content-center gap-5">
-          <mat-icon class="custom-icon">sentiment_dissatisfied</mat-icon>
-          <mat-icon class="custom-icon">thumb_up</mat-icon>
-          <mat-icon class="custom-icon"> sentiment_very_satisfied</mat-icon>
-        </div>
-      </div>
-      <div class="d-flex gap-4">
-        <div>
-          <p class="add-comment">0 Comment</p>
-        </div>
-        <div class="add-comment">Bambam</div>
-      </div>
-      <div class="d-flex align-items-center gap-2">
-        <div>
-          <mat-icon class="custom-icon-2">favorite</mat-icon>
-        </div>
-        <div>
-          <p class="font-2 mt-2">Favourite</p>
-        </div>
-        <div class="square-div">1</div>
-      </div>
-      <div class="row">
-        <div class="squared-div col-md-4">
-          <mat-icon class="custom-icon-3">person</mat-icon>
-        </div>
-        <div class="col-md-5">
-          <input type="text" placeholder="Start the discussion..." />
-
-          <div class="row">
-            <p>LOG IN WITH</p>
-          </div>
-          <div class="row">
-            <div class="d-flex gap-3">
-              <div
-                class="circle-div d-flex align-items-center justify-content-center"
-              >
-                <img
-                  src="assets/blog-images/Vector (7).svg"
-                  alt=""
-                  class="reduce-size"
-                />
-              </div>
-              <div
-                class="circle-div-1 d-flex align-items-center justify-content-center"
-              >
-                <img
-                  src="assets/blog-images/Vector (8).svg"
-                  alt=""
-                  class="reduce-size"
-                />
-              </div>
-              <div
-                class="circle-div-2 d-flex align-items-center justify-content-center"
-              >
-                <img
-                  src="assets/blog-images/Vector (9).svg"
-                  alt=""
-                  class="reduce-size"
-                />
-              </div>
-              <div class="row">
                 <div class="row">
-                  <p>OR SIGN UP WITH DISQUS ?</p>
-                </div>
-                <div class="row input">
-                  <input type="text" />
+                  <div class="column input">
+                    <input type="text" class="input-text" />
+                  </div>
                 </div>
               </div>
             </div>
@@ -332,9 +76,3 @@
             <p>Do Not Sell My Data</p>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
-</div> -->
-  </div>
-</div>

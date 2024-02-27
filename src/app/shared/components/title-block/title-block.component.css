@@ -27,9 +27,6 @@
   line-height: 43px;
   letter-spacing: 0em;
 }
-/* .custom-fw{
-  font-weight: lighter;
-} */
 
 @media only screen and(max-width:820px) {
   .custom-bg {
@@ -38,14 +35,19 @@
     /* padding: 0 100px 0 50px; */
     padding: 0;
   }
-  .custom-bg::-webkit-scrollbar {
+
+  .custom-bg::-webkit-scrollbar,
+  .responsive {
     display: none;
   }
 }
-@media screen and (max-width: 450px) {
+@media only screen and (max-width: 450px) {
   .custom-bg {
     padding: 0 20px;
     height: 70px;
+  }
+  .responsive {
+    display: none;
   }
   .custom-bg h1 {
     font-size: 15px;
