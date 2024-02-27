@@ -4,13 +4,12 @@
 
 
 .container{
- width: 723.67px;
- height: 260px;
- top: 98px;
- left: 130px;
- font-size: 13px;
+ width: 700.67px;
+  height: fit-content;
+ font-size: 11px;
  color: #fff;
- word-wrap: break-word;
+ /* word-wrap: break-word; */
+ font-weight: 200;
  font-family: 'Montserrat', sans-serif;
  background-color: #231e1e; 
 }
@@ -23,7 +22,7 @@ img{
 
 .col {
  border-bottom: 0.87px rgba(196, 196, 196, 0.21) solid;
- padding: 14px;
+ padding: 10px;
  /* background-color: #231e1e; */
  transition: transform 0.3s ease-in-out; 
 }
@@ -36,12 +35,9 @@ img{
 
 @media (max-width: 600px) {
  .col{
-  background-color: rgba(235, 227, 227, 0.70);
-  color: #000;
+  background-color: #EBE3E3;
+  color: #000;}
+ 
+
  }
 
-
- img{
-  color: #000;
- }
- }

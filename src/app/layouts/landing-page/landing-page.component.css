@@ -1,13 +1,14 @@
+
 /* General Styles */
-.primary-color{
+.primary-color {
     color: #FDA47A;
 }
 
-.primary-background{
+.primary-background {
     background: #FDA47A;
 }
 
-.orange-bgd{
+.orange-bgd {
     position: absolute;
     z-index: -1;
     top: 0;
@@ -17,66 +18,66 @@
 
 
 /* Nav Section */
-nav ul{
+nav ul {
     font-family: 'Montserrat';
     font-size: 0.875rem;
 }
 
-nav ul li{
+nav ul li {
     cursor: pointer;
 }
 
-.brand-logo{
+.brand-logo {
     height: 50px;
     width: 54px;
 }
 
-.logo-name{
+.logo-name {
     font-family: 'Nunito';
 }
 
-.logo-name-recipe{
+.logo-name-recipe {
     color: #FDA47A;
 }
 
 /* Hamburger */
-.hamburger{
+.hamburger {
     background: #FFF;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
 }
 
-.white{
+.white {
     background: #fff;
 }
 
-.orange{
+.orange {
     background: #FDA47A;
 }
 
 /* Hero Section */
-.hero{
+.hero {
     padding-top: 5rem;
 }
 
-.hero-text{
+.hero-text {
     text-wrap: nowrap;
     font-size: 4vw;
     margin-top: 3em;
     margin-left: 2rem;
 }
 
-.hero img{
+.hero img {
     transform: scale(1.05);
-    
+
 }
 
 /* Browse Section */
 
-.browse p{
+.browse p {
     font-family: 'Montserrat';
 }
 
-.see-all-button{
+.see-all-button {
     border-radius: 30px;
     width: 183px;
     height: 58px;
@@ -84,7 +85,7 @@ nav ul li{
     color: #ffffff;
 }
 
-.arrow-container{
+.arrow-container {
     height: 50px;
     width: 50px;
     border-radius: 50%;
@@ -95,12 +96,12 @@ nav ul li{
     color: #000000;
 }
 
-.see-all-button p{
+.see-all-button p {
     font-size: 25px;
     font-weight: 600px;
 }
 
-.recipe-container{
+.recipe-container {
     width: 80%;
     background: #FFF5EC;
     border-radius: 20px;
@@ -112,69 +113,63 @@ nav ul li{
 
 
 /* Popular Authors */
-.author-container{
+.author-container {
     background: #E2DBDB;
     border-radius: 30px;
 }
 
-.author-container-2 img{
+.author-container-2 img {
     border-radius: 50%;
 }
 
 /* Category Blog*/
-.category-item{
+.category-item {
     width: 131px;
     height: 91px;
     border: 3px solid white
 }
 
-.vert-divider{
+.vert-divider {
     width: 60%;
     height: 1px;
     margin: 8px 0;
     background: #ccc;
 }
 
-.categories{
-    top: 70%;
-    left: 40px;
-    z-index: 100;
-}
+.dropdown-menu {
+    left: auto !important;
+    right: 0 !important;
+    background-color: transparent;
+    border: none;
+  }
 
-.category-blog{
+
+.category-blog {
     padding: 50px 0;
 }
 
-
-
-@media screen and (max-width: 992px){
-    .nav-menu{
+@media screen and (max-width: 992px) {
+    .nav-menu {
         background: rgba(235, 227, 227, 1);
         width: 100%;
         transition: .5s ease;
         padding: 0 2em;
     }
 
-    .nav-menu ul li a{
+    .nav-menu ul li a {
         border-bottom: 1px solid black;
     }
 }
 
 @media screen and (min-width: 992px) {
-    .browse{
+    .browse {
         margin-top: 16rem;
     }
 }
 
-@media screen and (max-width: 992px) {
-
-    
-    
-}
-
-
-
-
 .keybaord {
     color: black;
 }
+
+
+

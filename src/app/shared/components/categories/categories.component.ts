@@ -12,7 +12,7 @@ import { Component, Input } from '@angular/core';
 export class CategoriesComponent {
   @Input() backgroundColor: string | undefined;
 
-  col1 =[
+  col1 = [
     { images: 'assets/icons/beef.svg', name: 'Beef' },
     { images: 'assets/icons/bread.svg', name: 'Bread' },
     { images: 'assets/icons/cakes.svg', name: 'Cakes' },
@@ -23,41 +23,41 @@ export class CategoriesComponent {
   col2 = [
     { images: 'assets/icons/blender.svg', name: 'Category2' },
     { images: 'assets/icons/blender.svg', name: 'Category3' },
-    { images: 'assets/icons/cake.svg', name: 'Category4' },
-    { images: 'assets/icons/cake.svg', name: 'Category5' },
+    { images: 'assets/icons/cake.svg', name: 'Cake' },
+    { images: 'assets/icons/cake.svg', name: 'Cake' },
     { images: 'assets/icons/blender.svg', name: 'Category6' }
   ]
 
   col3 = [
-    { images: 'assets/icons/chicken.svg', name: 'Category2' },
-    { images: 'assets/icons/coffee-togo.svg', name: 'Category3' },
-    { images: 'assets/icons/cookie.svg', name: 'Category4' },
-    { images: 'assets/icons/cupcake.svg', name: 'Category5' },
-    { images: 'assets/icons/drinks.svg', name: 'Category6' }
+    { images: 'assets/icons/chicken.svg', name: 'Chicken' },
+    { images: 'assets/icons/coffee-togo.svg', name: 'Coffee' },
+    { images: 'assets/icons/cookie.svg', name: 'Cookie' },
+    { images: 'assets/icons/cupcake.svg', name: 'Cupcake' },
+    { images: 'assets/icons/drinks.svg', name: 'Drink' }
   ]
 
   col4 = [
     { images: 'assets/icons/blender.svg', name: 'Category2' },
-    { images: 'assets/icons/fish.svg', name: 'Category3' },
-    { images: 'assets/icons/strength.svg', name: 'Category4' },
-    { images: 'assets/icons/ice-cream.svg', name: 'Category5' },
-    { images: 'assets/icons/kids.svg', name: 'Category6' }
+    { images: 'assets/icons/fish.svg', name: 'Fish' },
+    { images: 'assets/icons/strength.svg', name: 'Strength' },
+    { images: 'assets/icons/ice-cream.svg', name: 'Icecream' },
+    { images: 'assets/icons/kids.svg', name: 'Kids' }
   ]
 
   col5 = [
-    { images: 'assets/icons/cake.svg', name: 'Category2' },
-    { images: 'assets/icons/pizza.svg', name: 'Category3' },
-    { images: 'assets/icons/pork.svg', name: 'Category4' },
-    { images: 'assets/icons/salad.svg', name: 'Category5' },
-    { images: 'assets/icons/pork.svg', name: 'Category6' }
+    { images: 'assets/icons/cake.svg', name: 'Cake' },
+    { images: 'assets/icons/pizza.svg', name: 'Pizza' },
+    { images: 'assets/icons/pork.svg', name: 'Shrimp' },
+    { images: 'assets/icons/salad.svg', name: 'Salad' },
+    { images: 'assets/icons/pork.svg', name: 'Shrimp' }
   ]
 
   col6 = [
     { images: 'assets/icons/blender.svg', name: 'Category2' },
-    { images: 'assets/icons/pork.svg', name: 'Category3' },
-    { images: 'assets/icons/snacks.svg', name: 'Category4' },
-    { images: 'assets/icons/soup.svg', name: 'Category5' },
-    { images: 'assets/icons/tea.svg', name: 'Category6' }
+    { images: 'assets/icons/pork.svg', name: 'Shrimp' },
+    { images: 'assets/icons/snacks.svg', name: 'Snacks' },
+    { images: 'assets/icons/soup.svg', name: 'Soup' },
+    { images: 'assets/icons/tea.svg', name: 'Tea' }
   ]
 
 }
