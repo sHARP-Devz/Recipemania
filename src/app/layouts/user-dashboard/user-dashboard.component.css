@@ -1,0 +1,38 @@
+.title,
+.form-label{
+  font-size: 25px;
+  font-weight: 400;
+  letter-spacing: 0em;
+  margin-bottom: 15px;
+}
+
+.form-check-label,
+.input-group-text{
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 0em;
+}
+
+.form-control{
+  border-radius: 0%;
+}
+#inputDescription{
+  height: 154px;
+}
+
+.input-group-text{
+  background-color: #FDA47A;
+  color: #FFFFFF;
+  height: 26px;
+  border: none;
+  border-radius: 0%;
+}
+.file-control{
+  height: 32px;
+}
+
+@media screen and (max-width: 768px) {
+  .side-bar{
+    width: 275.11px;
+  }
+}
