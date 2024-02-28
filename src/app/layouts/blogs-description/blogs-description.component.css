@@ -413,3 +413,22 @@ mat-icon {
     display: none;
   }
 }
+
+.flex-section {
+  display: flex;
+}
+.flex-contact input,
+.flex-contact-2 input {
+  height: 47px;
+  width: 50%;
+}
+
+.flex-contact-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.social-imgs {
+  display: flex;
+}
