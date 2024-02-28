@@ -1,6 +1,6 @@
-import { Component, OnInit, HostListener } from '@angular/core';
+import { Component, OnInit, HostListener, Input } from '@angular/core';
 import { recipe_data } from './recipe';
-import { popular_recipe_data } from './pop_recipe';
+import { popular_recipe_data } from '../landing-page/pop_recipe';
 import { author_data } from './authors';
 import { ToggleService } from './toggle.service';
 
@@ -13,6 +13,11 @@ export class LandingPageComponent {
 
   isMobile: boolean = false;
   toggle: boolean = false;
+
+  // copied from james code for star rating
+  @Input() rating: number = 2.5;
+  maxRating: number = 4;
+  // copied from james code for star rating
 
   constructor(private toggleService: ToggleService) {
   }
@@ -31,6 +36,21 @@ export class LandingPageComponent {
   onResize(event:any) {
     this.toggleService.onResize()
   }
+
+
+  // copied from james code for star rating
+  get filledStars(): number[] {
+    const percentage = (this.rating / this.maxRating) * 100;
+    const numberOfStars = Math.round((percentage / 100) * this.maxRating);
+    return Array(numberOfStars).fill(0);
+  }
+
+  get emptyStars(): number[] {
+    const numberOfStars = this.maxRating - this.filledStars.length;
+    return Array(numberOfStars).fill(0);
+  }
+  // copied from james code for star rating
+
 
   showMenu() {
     if(this.isMobile) {
