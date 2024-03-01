@@ -90,8 +90,9 @@ nav ul li {
 }
 .browse-recipes {
   display: grid;
-  grid-template-columns: repeat(4 , 200px);
+  grid-template-columns: repeat(4 , 1fr);
   justify-content: space-between;
+  gap: 30px;
   row-gap: 50px;
   padding: 20px 50px;
 }
@@ -127,7 +128,8 @@ nav ul li {
   border-radius: 20px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: center;
   gap: 10px;
   text-align: left;
   padding: 0px;
@@ -136,6 +138,17 @@ nav ul li {
 
 .browse ul {
   list-style: none;
+}
+
+.recipe-img{
+  width: 80%;
+  margin: 1em auto;
+}
+
+.recipe-name {
+  font-weight: bold;
+  font-size: 1.25em;
+  margin-left: 3em;
 }
 
 /* Popular Recipes */
@@ -224,6 +237,23 @@ nav ul li {
 
 .category-blog {
   padding: 50px 0;
+}
+
+@media screen and (max-width: 992px) {
+  .nav-menu {
+    background: rgba(235, 227, 227, 1);
+    width: 100%;
+    transition: 0.5s ease;
+    padding: 0 2em;
+  }
+
+  .nav-menu ul li a {
+    border-bottom: 1px solid black;
+  }
+  .browse-recipes {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px 10px;
+  }
 }
 
 @media screen and (max-width: 700px) {
@@ -320,18 +350,7 @@ nav ul li {
   }
 }
 
-@media screen and (max-width: 992px) {
-  .nav-menu {
-    background: rgba(235, 227, 227, 1);
-    width: 100%;
-    transition: 0.5s ease;
-    padding: 0 2em;
-  }
 
-  .nav-menu ul li a {
-    border-bottom: 1px solid black;
-  }
-}
 
 /* @media screen and (min-width: 992px) {
     .browse{

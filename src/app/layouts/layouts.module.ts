@@ -19,6 +19,8 @@ import { SocialsComponent } from '../shared/components/socials/socials.component
 import { FooterComponent } from '../shared/components/footer/footer.component';
 import { PrimaryButtonComponent } from '../shared/components/primary-button/primary-button.component';
 import { NavbarComponent } from '../shared/components/navbar/navbar.component';
+import { UserCardComponent } from '../shared/components/user-card/user-card.component';
+import { UserRecipeComponent } from './user-recipe/user-recipe.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,8 @@ import { NavbarComponent } from '../shared/components/navbar/navbar.component';
     RecipePageComponent,
     ContactUsComponent,
     BlogsDescriptionComponent,
-    BlogsComponent
+    BlogsComponent,
+    UserRecipeComponent
   ],
   imports: [
     CommonModule,
@@ -43,7 +46,8 @@ import { NavbarComponent } from '../shared/components/navbar/navbar.component';
     FooterComponent,
     PrimaryButtonComponent,
     NavbarComponent,
+    UserCardComponent
   ],
-  exports: [LandingPageComponent, RecipePageComponent],
+  exports: [LandingPageComponent, RecipePageComponent, UserRecipeComponent],
 })
 export class LayoutsModule {}

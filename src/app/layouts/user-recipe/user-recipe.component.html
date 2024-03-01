@@ -1,14 +1,16 @@
 <app-navbar [backgroundColor]="'black'" [textColor]="'white'"></app-navbar>
 <!-- Browse recipe page -->
-<div class="container mt-5 d-flex justify-content-between flex-column flex-lg-row">
+<app-title-block title="My Recipes"></app-title-block>
+
+<div class="recipe-container container mt-5 d-flex flex-column flex-lg-row">
     <!-- Profile card goes here -->
-    <app-footcat></app-footcat>
+    <!-- <app-footcat></app-footcat> -->
+    <app-user-card></app-user-card>
 
     <!-- Table Container -->
     <div class="recipe-table-container">
         <p class="fs-4">My Recipes</p>
         <div class="vert-divider mb-2">
-
         </div>
         <div class="recipe-table">
             <table class="table">
@@ -23,21 +25,21 @@
                 </thead>
                 <tbody>
                   <tr *ngFor="let recipe of recipes" class="recipe py-auto align-items-center">
-                    <td class="pe-5 "><img src="../../../assets/images/recipe/{{recipe.img}}">  </td>
-                    <td class="pe-5 title">{{recipe.title}}</td>
-                    <td class="pe-5 ">{{recipe.category}}</td>
-                    <td class="pe-5 ">{{recipe.recipeStatus}}</td>
+                    <td class="pe-lg-5 recipe-img "><img src="../../../assets/images/recipe/{{recipe.img}}">  </td>
+                    <td class="pe-lg-5 title">{{recipe.title}}</td>
+                    <td class="pe-lg-5 ">{{recipe.category}}</td>
+                    <td class="pe-lg-5 ">{{recipe.recipeStatus}}</td>
                     <td class="">
                         <span class="recipe-icons d-flex">
-                            <mat-icon class="icon-round-visibility fs-5 d-flex align-items-center justify-content-center me-2">visibility</mat-icon>
-                            <mat-icon class="icon-round-edit fs-5 d-flex align-items-center justify-content-center me-2">edit</mat-icon>
-                            <mat-icon class="icon-round-delete fs-5 d-flex align-items-center justify-content-center me-2">delete</mat-icon>
-
+                            <mat-icon class="icon-round-visibility d-flex align-items-center justify-content-center me-1 me-lg-2">visibility</mat-icon>
+                            <mat-icon class="icon-round-edit d-flex align-items-center justify-content-center me-1 me-lg-2">edit</mat-icon>
+                            <mat-icon class="icon-round-delete d-flex align-items-center justify-content-center me-1 me-lg-2">delete</mat-icon>
                         </span>
                     </td>
                   </tr>
                 </tbody>
               </table>
         </div>
-    </div>
+    </div>  
 </div>
+<app-footer></app-footer>
