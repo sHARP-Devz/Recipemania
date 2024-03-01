@@ -4,13 +4,12 @@
 
 
 .container{
- width: 723.67px;
- height: 260px;
- top: 98px;
- left: 130px;
- font-size: 13px;
+ width: 650.67px;
+ height: fit-content;
+ font-size: 11px;
  color: #fff;
- word-wrap: break-word;
+ /* word-wrap: break-word; */
+ font-weight: 200;
  font-family: 'Montserrat', sans-serif;
  background-color: #231e1e; 
 }
@@ -23,8 +22,7 @@ img{
 
 .col {
  border-bottom: 0.87px rgba(196, 196, 196, 0.21) solid;
- padding: 14px;
- /* background-color: #231e1e; */
+ padding: 10px;
  transition: transform 0.3s ease-in-out; 
 }
 
@@ -34,14 +32,34 @@ img{
 
 
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
  .col{
-  background-color: rgba(235, 227, 227, 0.70);
   color: #000;
+  display: flex;
+  align-items: center;
+  font-size: 7px;
+  padding: 0;
+  
+}
+
+.col img{
+  margin: 0;
+  width: 8px;
+  margin-right: 7px;
+}
+
+.row{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  text-align: right;
+  width: 100%;
+  margin-left: 0px;
+}
+
+.container{
+width: 100%;
+padding: 0;
+background-color: #EBE3E3B2;
+}
  }
 
-
- img{
-  color: #000;
- }
- }
