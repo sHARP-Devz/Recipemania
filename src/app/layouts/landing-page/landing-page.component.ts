@@ -3,6 +3,7 @@ import { recipe_data } from './recipe';
 import { popular_recipe_data } from '../landing-page/pop_recipe';
 import { author_data } from './authors';
 import { ToggleService } from './toggle.service';
+import { AuthService } from 'src/app/auth/auth-service.service';
 
 @Component({
   selector: 'app-landing-page',

@@ -13,6 +13,8 @@ import { CategoriesComponent } from './shared/components/categories/categories.c
 import { FootcatComponent } from './shared/components/footcat/footcat.component';
 import { UserCardComponent } from './shared/components/user-card/user-card.component';
 
+import { ToastrModule } from 'ngx-toastr';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -27,6 +29,9 @@ import { UserCardComponent } from './shared/components/user-card/user-card.compo
     MatIconModule,
     CategoriesComponent,
     FootcatComponent,
+    HttpClientModule,
+    BrowserAnimationsModule,
+    ToastrModule.forRoot(),
     UserCardComponent
   ],
   providers: [],

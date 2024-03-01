@@ -19,6 +19,7 @@ import { SocialsComponent } from '../shared/components/socials/socials.component
 import { FooterComponent } from '../shared/components/footer/footer.component';
 import { PrimaryButtonComponent } from '../shared/components/primary-button/primary-button.component';
 import { NavbarComponent } from '../shared/components/navbar/navbar.component';
+import { UserDashboardComponent } from './user-dashboard/user-dashboard.component';
 import { UserCardComponent } from '../shared/components/user-card/user-card.component';
 import { UserRecipeComponent } from './user-recipe/user-recipe.component';
 
@@ -30,7 +31,8 @@ import { UserRecipeComponent } from './user-recipe/user-recipe.component';
     ContactUsComponent,
     BlogsDescriptionComponent,
     BlogsComponent,
-    UserRecipeComponent
+    UserRecipeComponent,
+    UserDashboardComponent
   ],
   imports: [
     CommonModule,
@@ -41,7 +43,8 @@ import { UserRecipeComponent } from './user-recipe/user-recipe.component';
     CategoriesComponent,
     FootcatComponent,
     TitleBlockComponent,
-    
+    UserCardComponent,
+
     SocialsComponent,
     FooterComponent,
     PrimaryButtonComponent,

@@ -15,9 +15,9 @@ export class UserCardComponent {
   ];
 
   icons: any[] = [
-    { name: "Dashboard", url: 'assets/icons/dashboard-icon.png' },
-    { name: "My Profile", url: 'assets/icons/profile-icon.png' },
-    { name: "My Recipes", url: 'assets/icons/recipes-icon.png' },
-    { name: "Logout", url: 'assets/icons/logout-icon.png' },
+    { name: "Dashboard", url: 'assets/icons/dashboard-icon.svg' },
+    { name: "My Profile", url: 'assets/icons/profile-icon.svg' },
+    { name: "My Recipes", url: 'assets/icons/recipes-icon.svg' },
+    { name: "Logout", url: 'assets/icons/logout-icon.svg' },
   ]
 }
