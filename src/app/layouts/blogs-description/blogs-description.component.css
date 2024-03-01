@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 .add-width {
   width: 295.08px;
   height: 327px;
@@ -226,9 +230,8 @@
 }
 
 .main-img {
-  width: 609px;
-  /* width: 56px; */
-  height: 428px;
+  /* width: 609px; */
+  /* height: 428px; */
 }
 .add-font {
   font-family: Montserrat;
@@ -252,13 +255,14 @@
   width: 295.08px;
   height: 327px;
   border-radius: 50%;
-  background-color: red;
+  /* background-color: red; */
 }
 .add-radius {
   border-radius: 125px;
 }
 .card-title {
   font-family: Montserrat;
+
   font-size: 31px;
   font-weight: 500;
   line-height: 37px;
@@ -343,7 +347,7 @@
   height: 85px;
 }
 .div {
-  background-color: red;
+  /* background-color: red; */
 }
 .circle-div {
   width: 35px;
@@ -407,7 +411,7 @@ mat-icon {
 
 @media only screen and (max-width: 992px) {
   .pb-3 {
-    background-color: red;
+    /* background-color: red; */
   }
   .responsive {
     display: none;
@@ -431,4 +435,73 @@ mat-icon {
 
 .social-imgs {
   display: flex;
+}
+
+/*New Code*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.flex-section {
+  display: flex;
+  width: 100%;
+  padding: 0 1rem;
+}
+.flex-contact input {
+  height: 30px;
+  width: 40%;
+  /* background:; */
+}
+
+.flex-contact {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 0.5rem;
+  /* align-items: flex-end; */
+}
+
+.social-imgs {
+  display: flex;
+  gap: 0.2rem;
+  margin: 0;
+}
+
+.reduce-size {
+  width: 29px;
+  height: 29px;
+}
+
+.flex-2 {
+  display: flex;
+  align-items: center;
+}
+
+h6 {
+  margin: 0 5px;
+}
+.signup-div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.div-1 {
+  margin-left: 100px;
+}
+
+.signup-text {
+  text-align: left;
+  /* margin-left: 15px; */
+}
+
+/* .margin-body {
+  margin-left: 150px;
+} */
+
+@media only screen and (max-width: 600px) {
+  .flex-contact input {
+    width: 100%;
+  }
 }

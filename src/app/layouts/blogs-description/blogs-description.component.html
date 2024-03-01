@@ -55,8 +55,8 @@
 
 <div class="mt-5">
   <app-title-block
-    class="pb-3"
-    [height]="80"
+    class=""
+    [height]="60"
     [title]="'Make your own chicken'"
     [breadcrumbs]="[
       { label: 'Home', link: '/layouts/home' },
@@ -66,7 +66,7 @@
   ></app-title-block>
 </div>
 
-<div class="container py-3 mx-3">
+<div class="container-fluid margin-body">
   <div class="row">
     <div class="col-md-12">
       <div *ngFor="let blog of blogsData" class="blog-item">
@@ -313,43 +313,45 @@
         <section class="flex-section">
           <div><mat-icon class="custom-icon-3">person</mat-icon></div>
 
-          <div class="flex-contact-2">
+          <div class="flex-contact">
             <input type="text" placeholder="Start the discussion..." />
-            <div class="social-imgs">
-              <div
-                class="circle-div-2 d-flex align-items-center justify-content-center"
-              >
-                <img
-                  src="assets/bog-images/Vector (9).svg"
-                  alt=""
-                  class="reduce-size"
-                />
+            <h6>LOG IN WITH</h6>
+            <div class="signup-div">
+              <div class="div-1">
+                <h6 class="signup-text">OR SIGN UP WITH DISQUS?</h6>
               </div>
-              <div
-                class="circle-div-2 d-flex align-items-center justify-content-center"
-              >
-                <img
-                  src="assets/blog-images/Vector (9).svg"
-                  alt=""
-                  class="reduce-size"
-                />
+
+              <div class="flex-2">
+                <div class="social-imgs">
+                  <div>
+                    <img
+                      class="reduce-size"
+                      src="assets/blog-images/ant-design_eye-filled.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div>
+                    <img
+                      class="reduce-size"
+                      src="assets/blog-images/ant-design_eye-filled.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div>
+                    <img
+                      class="reduce-size"
+                      src="assets/blog-images/ant-design_eye-filled.svg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <input type="text" placeholder="Name" />
               </div>
-              <div
-                class="circle-div-2 d-flex align-items-center justify-content-center"
-              >
-                <img
-                  src="assets/blog-images/Vector (9).svg"
-                  alt=""
-                  class="reduce-size"
-                />
-              </div>
-            </div>
-            <div>
-              <p>OR SIGN UP WITH DISQUS ?</p>
-              <input type="text" placeholder="Name" />
             </div>
           </div>
         </section>
+
+        <!-- End Fixing-->
       </div>
       <br />
       <br />
@@ -390,30 +392,3 @@
     </div>
   </div>
 </div>
-
-<!-- <div class="">
-  <div class="div">
-    <div class="">
-      <img src="assets/blog-images/Vector (8).svg" alt="" />
-    </div>
-  </div>
-
-  <div class=" ">
-    <div class="">
-      <img src="assets/blog-images/Vector (8).svg" alt="" />
-    </div>
-    <div class="circle-div">
-      <div class="">
-        <img src="assets/blog-images/Vector (8).svg" alt="" />
-      </div>
-      <div class="circle-div">
-        <div class="">
-          <img src="assets/blog-images/Vector (8).svg" alt="" />
-        </div>
-        <div class="row">
-          <input type="text" placeholder="imakwa" />
-        </div>
-      </div>
-    </div>
-  </div>
-</div> -->
