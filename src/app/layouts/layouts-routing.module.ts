@@ -18,6 +18,7 @@ const routes: Routes = [
       { path: 'blogs', component: BlogsComponent },
       { path: 'blogs-des', component: BlogsDescriptionComponent },
       { path: 'contactus', component: ContactUsComponent },
+      { path: 'user-dashboard', component: UserDashboardComponent }
       { path: 'dashboard', component: UserDashboardComponent },
     ],
   },

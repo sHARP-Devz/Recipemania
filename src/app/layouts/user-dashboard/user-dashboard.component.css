@@ -8,6 +8,10 @@
   letter-spacing: 0em;
   margin-bottom: 15px;
 }
+.wrapper{
+  font-family: "Montserrat";
+}
+
 
 .form-check-label,
 .input-group-text{
