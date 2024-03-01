@@ -3,6 +3,8 @@ import { recipe_data } from './recipe';
 import { popular_recipe_data } from '../landing-page/pop_recipe';
 import { author_data } from './authors';
 import { ToggleService } from './toggle.service';
+import { AuthService } from 'src/app/auth/auth-service.service';
+
 
 @Component({
   selector: 'app-landing-page',
@@ -13,6 +15,13 @@ export class LandingPageComponent {
 
   isMobile: boolean = false;
   toggle: boolean = false;
+
+  isCat:boolean = false;
+
+  isCatOpen() {
+    this.isCat = !this.isCat
+    console.log(this.isCat)
+  }
 
   // copied from james code for star rating
   @Input() rating: number = 2.5;

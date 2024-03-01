@@ -21,7 +21,7 @@ export class RecipePageComponent {
   userProfile: any[] = [{ name: "Bambam", url: 'assets/images/profilepic.png' }];
 
   // PAGINATION LOGIC
-  @Input() rating: number = 0;
+  @Input() rating: number = 4;
   maxRating: number = 5;
   
   

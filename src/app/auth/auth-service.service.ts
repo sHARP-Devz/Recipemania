@@ -5,12 +5,13 @@ import { HttpClient } from '@angular/common/http';
 @Injectable({
   providedIn: 'root'
 })
-export class AuthServiceService {
+export class AuthService {
 
   private  apiUrl = 'https://recipe-mania-tigz.onrender.com/api/v1/auth/register'
+  
   private  apiLogin = 'https://recipe-mania-tigz.onrender.com/api/v1/auth/signin'
 
-  constructor(public http: HttpClient) { }
+  constructor(public http: HttpClient) {}
 
   register(data: any){
     return this.http.post<any>(`${this.apiUrl}`, data)
