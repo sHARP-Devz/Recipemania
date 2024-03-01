@@ -10,6 +10,8 @@ import { CommonModule } from '@angular/common';
 })
 export class PrimaryButtonComponent {
   @Input() bgColor: string = '#FDA47A';
+  @Input() fsize: string = '20px';
+  @Input() padding: string = '20px';
   @Input() label: string = 'label';
   @Input() width!: number;
   @Input() height!: number;
