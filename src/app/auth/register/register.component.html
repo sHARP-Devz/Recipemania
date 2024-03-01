@@ -13,31 +13,31 @@
         type="text"
         placeholder="Username"
         name="username"
-        [(ngModel)]="register.username"
+        [(ngModel)]="registerForm.firstName"
       />
       <input
         class="form-control custom-h mb-3"
         type="text"
         placeholder="Email"
-        name="username"
-        [(ngModel)]="register.username"
+        name="email"
+        [(ngModel)]="registerForm.email"
       />
       <input
         class="form-control custom-h mb-3"
         type="text"
         placeholder="Password"
-        name="username"
-        [(ngModel)]="register.username"
+        name="password"
+        [(ngModel)]="registerForm.password"
       />
       <input
         class="form-control custom-h mb-3"
         type="text"
         placeholder="Confirm Password"
-        name="username"
-        [(ngModel)]="register.username"
+        name="confirmPassword"
+        [(ngModel)]="registerForm.password"
       />
 
-      <button class="btn btn-custom">REGISTER NOW</button>
+      <button (click)="registerUser()" class="btn btn-custom">REGISTER NOW</button>
     </form>
 
     <p class="mt-3">
