@@ -1,5 +1,4 @@
 import { NgModule } from '@angular/core';
-// import { RouterModule, Routes } from '@angular/router';
 import { RouterModule, Routes } from '@angular/router';
 import { LayoutsComponent } from './layouts.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
