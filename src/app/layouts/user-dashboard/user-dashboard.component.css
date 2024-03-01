@@ -1,6 +1,6 @@
-.form-container{
+/* .form-container{
 
-}
+} */
 .title,
 .form-label{
   font-size: 25px;
@@ -35,12 +35,28 @@
   height: 32px;
 }
 
-@media screen and (max-width: 768px) {
+.primary-button{
+  font-family: Montserrat;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0em;
+  text-align: left;
+  width: 88px;
+  height: 45px;
+}
+
+
+  @media screen and (max-width: 450px) {
   .side-bar{
     width: 275.11px;
   }
 
   .form-container{
     width: 100%;
+  }
+
+  .form-control{
+    width: 100%;
+    border-radius: 0%;
   }
 }
