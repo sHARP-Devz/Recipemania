@@ -229,10 +229,14 @@ nav ul li {
   background: #ccc;
 }
 
-.categories {
-  top: 70%;
-  left: 40px;
-  z-index: 100;
+
+
+.categories{
+  left: auto !important;
+  right: -50% !important; 
+  transform: translateX(0px); 
+  border: none;
+  background-color: transparent;
 }
 
 .category-blog {
@@ -260,6 +264,9 @@ nav ul li {
   .browse {
     padding: 50px 20px;
   }
+  /* .categories{
+    left: 15px;
+  } */
   .browse-recipes {
     grid-template-columns: 1fr;
     padding: 20px 10px;
@@ -348,15 +355,26 @@ nav ul li {
   .author-container {
     margin: 0;
   }
+  
+}
+
+@media screen and (max-width: 992px) {
+  .nav-menu {
+    background: transparent;
+    width: 100%;
+    transition: 0.5s ease;
+    padding: 0;
+  }
+
+  .nav-menu ul li a {
+    margin-top: 1px;
+    border-bottom: 1px solid transparent;
+    background: rgba(235, 227, 227, 1);
+    width: 100%;
+  }
 }
 
 
-
-/* @media screen and (min-width: 992px) {
-    .browse{
-        margin-top: 16rem;
-    }
-  } */
 
 @media screen and (max-width: 992px) {
 }
