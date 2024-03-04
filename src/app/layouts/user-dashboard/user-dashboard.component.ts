@@ -10,8 +10,10 @@ export class UserDashboardComponent {
 
 
 onFileSelected(event: any) {
+  event.preventDefault();
+
   const file = event.target.files[0];
-  console.log(file);
+  console.log(this.fileInput);
   // You can now handle the selected file here
 }
 }

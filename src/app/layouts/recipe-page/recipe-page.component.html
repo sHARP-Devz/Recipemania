@@ -28,7 +28,7 @@
     <div class="ps-4">
       <div class="row">
         <!-- recipe cards with data required to come from the Backend -->
-        <div *ngFor= "let image of images; let i = index" class="col-12 col-md-6 col-sm-3 m-5 p-3 recipebox ">
+        <div *ngFor= "let image of images; let i = index" class="col-12 col-md-6 col-sm-3 m-5 me-lg-5 p-3 recipebox ">
           <img [src]= "image.url" alt="image.name"/>
           <p class="image fw-bold">{{image.name}}</p>
           <span class="profile fw-bold" *ngFor= "let profile of userProfile">

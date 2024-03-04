@@ -13,6 +13,7 @@ import { RouterLink } from '@angular/router';
 export class TitleBlockComponent {
   @Input() height: number = 150;
   @Input() title: string = 'title';
+  @Input() user: string = 'user';
   @Input() color: string = 'color';
   // @Input() font-size: string = 'color';
   @Input() breadcrumbs: { label: string; link?: string }[] = [];
