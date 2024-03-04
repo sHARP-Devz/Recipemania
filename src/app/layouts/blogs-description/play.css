@@ -1,6 +1,5 @@
 * {
   box-sizing: border-box;
-  overflow: hidden;
 }
 
 .add-width {
@@ -138,13 +137,16 @@
 }
 
 @media screen and (max-width: 992px) {
+  .pb-3 {
+    /* background-color: red; */
+  }
+  .responsive {
+    display: none;
+  }
+
   .detail span {
     text-wrap: nowrap;
     font-size: 10px;
-  }
-
-  .responsive-margin {
-    margin-left: 50px;
   }
 
   mat-icon {
@@ -155,8 +157,10 @@
 
   .font-title {
     font-family: Montserrat;
-    font-size: 10px;
+    font-size: 20px;
     /* font-weight: 400; */
+    /* line-height: 18px;
+    letter-spacing: 0em; */
   }
 
   .custom-icon-4 {
@@ -193,7 +197,9 @@
 }
 
 .container {
-  width: 80%;
+  padding-right: 40px;
+  max-width: 95vw;
+  margin-top: 35px;
 }
 
 .hamburger {
@@ -226,10 +232,9 @@
   /* width: 609px; */
   /* height: 428px; */
 }
-
 .add-font {
   font-family: Montserrat;
-  font-size: 1.5rem;
+  font-size: 35px;
   font-weight: 500;
   line-height: 43px;
   letter-spacing: 0em;
@@ -238,7 +243,6 @@
 .add-color,
 .card-1 {
   background-color: #fff5ec;
-  border: none;
 }
 .add-img-width {
   /* width: 169.47px; */
@@ -248,10 +252,9 @@
 }
 .add-width-again {
   width: 295.08px;
-  /* width: 100%; */
   height: 327px;
-  border-radius: 5%;
-  border: none;
+  border-radius: 50%;
+  /* background-color: red; */
 }
 .add-radius {
   border-radius: 125px;
@@ -273,7 +276,7 @@
 }
 .add-comment {
   font-family: Montserrat;
-  font-size: 1.5rem;
+  font-size: 25px;
   font-weight: 500;
   line-height: 30px;
   letter-spacing: 0em;
@@ -318,7 +321,6 @@
   background: #c4c4c499;
   width: 100px;
   height: 80px;
-  margin-right: 50px;
   /* width: 16.6px; */
   /* height: 17.8px; */
 }
@@ -347,22 +349,20 @@
   /* background-color: red; */
 }
 .circle-div {
-  /* width: 35px; */
-  /* height: 35px; */
-  width: 40px;
-  height: 30px;
+  width: 35px;
+  height: 35px;
   border-radius: 50px;
   background-color: #4267b2;
 }
 .circle-div-1 {
-  width: 40px;
-  height: 30px;
+  width: 35px;
+  height: 35px;
   border-radius: 50px;
   background-color: #00acee;
 }
 .circle-div-2 {
-  width: 40px;
-  height: 30px;
+  width: 35px;
+  height: 35px;
   border-radius: 50px;
   background: linear-gradient(
     190.75deg,
@@ -379,11 +379,21 @@
   background: #282b3096;
 }
 
-.login {
-  font-family: Montserrat;
-  font-size: 12px;
-  font-weight: 400;
+.reduce-size {
+  width: 26px;
+  height: 26px;
 }
+
+/* .detail span {
+  text-wrap: nowrap;
+  font-size: 10px;
+}
+
+mat-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
 
 .custom-icon-4 {
   /* font-size: 12px; */
@@ -398,40 +408,7 @@
   gap: 80px;
 }
 
-@media only screen and (min-width: 992px) {
-  .div-1 {
-    margin-left: 130px;
-    text-wrap: nowrap;
-  }
-  .move-div-left {
-    margin-right: 1300px;
-  }
-  .favourite {
-    margin-left: 80px;
-  }
-  .reduce-size {
-    width: 29px;
-    height: 29px;
-  }
-  .circle-div,
-  .circle-div-1,
-  .circle-div-2 {
-    width: 35px;
-    height: 35px;
-  }
-}
-
 @media only screen and (max-width: 992px) {
-  .div-1 {
-    margin-left: 80px;
-    text-wrap: nowrap;
-  }
-  .pb-3 {
-    /* background-color: red; */
-  }
-  .responsive {
-    display: none;
-  }
 }
 
 .flex-section {
@@ -441,27 +418,6 @@
 .flex-contact-2 input {
   height: 47px;
   width: 50%;
-}
-/* .foots {
-  height: auto;
-} */
-.mats {
-  font-size: 15px;
-}
-.mat {
-  font-size: 12px;
-}
-.disqus {
-  margin-left: 80%;
-  font-weight: 900;
-}
-.ftImg {
-  margin-top: -15px;
-}
-.footBg {
-  background: #e2dbdb;
-  height: 674px;
-  width: 100%;
 }
 
 .flex-contact-2 {
@@ -481,28 +437,6 @@
   box-sizing: border-box;
 }
 
-.comment {
-  font-family: Montserrat;
-  font-size: 15px;
-  font-weight: 400;
-}
-
-.login-1 {
-  font-family: Montserrat;
-  font-size: 12px;
-  font-weight: 400;
-  text-wrap: nowrap;
-}
-
-.custom-footer-icon {
-  color: #282b3096;
-}
-
-.footer-font {
-  font-family: Montserrat;
-  font-size: 10px;
-  font-weight: 400;
-}
 .flex-section {
   display: flex;
   width: 100%;
@@ -529,10 +463,8 @@
 }
 
 .reduce-size {
-  width: 15px;
-  height: 15px;
-  /* width: 29px; */
-  /* height: 29px; */
+  width: 29px;
+  height: 29px;
 }
 
 .flex-2 {
@@ -548,10 +480,9 @@ h6 {
   flex-direction: column;
   gap: 0.5rem;
 }
-
-/* .div-1 {
-  margin-left: 150px;
-} */
+.div-1 {
+  margin-left: 100px;
+}
 
 .signup-text {
   text-align: left;
