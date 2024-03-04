@@ -1,59 +1,59 @@
-.wrapper{
-    background-color: #231e1e;
-    height: 250px;
-    width: 100%;
-  }
-  .social-icons {
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      gap: 5px;
-      justify-content: center;
-      align-items: center;
-      width: 20%;
-    }
-  
-  .social-icon {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 5px;
-      width: 55px;
-      height: 55px;
-    }
-  .social-icon img{
-      height: 20px; 
-      width: 20px;
-    }
-  .heading{
-      color: #fff;
-      font-weight: 600;
-      font-family: 'Montserrat', sans-serif;
-      font-size: 25px;
-    }
-  .sub-heading{
-      color: #fff;
-      font-weight: 400;
-      font-family: 'Montserrat', sans-serif;
-      font-size: 15.71px;
-  }
+.wrapper {
+  background-color: #231e1e;
+  height: 250px;
+  width: 100%;
+}
+.social-icons {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  width: 55px;
+  height: 55px;
+}
+.social-icon img {
+  height: 20px;
+  width: 20px;
+}
+.heading {
+  color: #fff;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  font-size: 25px;
+}
+.sub-heading {
+  color: #fff;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15.71px;
+}
 
 @media (max-width: 576px) {
   .wrapper {
-    height: 643px; 
+    height: 643px;
   }
- 
+
   .social-icons {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); 
-    grid-gap: 10px; 
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
     margin-left: 130px;
   }
-  
+
   .social-icon {
     width: 80.28px;
     height: 80.28px;
   }
-}  
+}
 @media (min-width: 577px) and (max-width: 767px) {
   .social-icons {
     display: flex;
@@ -70,8 +70,8 @@
 @media (min-width: 768px) and (max-width: 1024px) {
   .social-icons {
     display: grid;
-    grid-template-columns: repeat(5, 1fr); 
-    grid-gap: 10px; 
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
     margin-left: 90px;
   }
 
@@ -80,7 +80,3 @@
     height: 80px;
   }
 }
-
-
-  
-  

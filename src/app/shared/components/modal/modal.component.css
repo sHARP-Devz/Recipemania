@@ -12,7 +12,7 @@
   z-index: 1000;
 }
 .mode{
-  background: #FFF;
+  background-color: #FFF;
   border-radius: 8px;
   padding: 10px;
 }
@@ -20,5 +20,9 @@
   display: none;
 }
 @media screen and (max-width: 450px) {
-  
+  .mode{
+    padding: 0;
+    width: 90%;
+    border-radius: 2px;
+  }
 }

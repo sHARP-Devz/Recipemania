@@ -1,13 +1,16 @@
 .custom-bg {
   background-color: var(--accent-color);
-  /* padding: 0 200px 0 100px; */
-  padding: 0 7vw 0 7vw;
+  padding: 0 200px 0 100px;
   display: flex;
-  justify-content: space-between;
-  height: 50px;
+  justify-content: center;
+  font-family: "Montserrat";
 }
 .custom-bg h1 {
   font-family: "Montserrat";
+  margin: 0;
+}
+.custom-bg p{
+  margin: 0;
 }
 .custom-cursor {
   cursor: pointer;
