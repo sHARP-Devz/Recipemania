@@ -16,7 +16,7 @@ import { FootcatComponent } from './shared/components/footcat/footcat.component'
 @NgModule({
   declarations: [
     AppComponent,
-    AuthComponent
+    AuthComponent,
   ],
   imports: [
     BrowserModule,
