@@ -18,19 +18,22 @@
     <div class="nav-menu" id="navbarSupportedContent" *ngIf="!isMobile || toggle">
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-bold cursor-pointer list-unstyled" [style.color]="textColor">
         <li class="nab-item pe-2">
-          <a class="nav-link" routerLink="/layouts/home" [style.color]="textColor" href="#">Home</a>
+          <a class="nav-link" routerLink="/layouts/home" [style.color]="textColor">Home</a>
         </li>
         <li class="nav-item pe-2">
-          <a class="nav-link"  [style.color]="textColor"href="#">Categories</a>
+          <a class="nav-link"  [style.color]="textColor">Categories</a>
+          <div class="categories dropdown-menu" aria-labelledby="categoriesDropdown">
+            <app-categories ></app-categories>
+          </div>
         </li>
         <li class="nav-item pe-2">
           <a routerLink = "/layouts/recipe" [style.color]="textColor" class="nav-link">Recipes</a>
         </li>
         <li  class="nav-item pe-2">
-          <a class="nav-link" routerLink="/layouts/blogs" [style.color]="textColor" href="#">Blogs</a>
+          <a class="nav-link" routerLink="/layouts/blogs" [style.color]="textColor">Blogs</a>
         </li>
         <li router class="nav-item pe-2">
-          <a class="nav-link" routerLink="/layouts/contactus" [style.color]="textColor" href="#">Contact Us</a>
+          <a class="nav-link" routerLink="/layouts/contactus" [style.color]="textColor">Contact Us</a>
         </li>
         <li (click)="loginModaltoggle(true)" class="nav-item">
           <a class="nav-link cursor-pointer" [style.color]="textColor">Login/Register</a>

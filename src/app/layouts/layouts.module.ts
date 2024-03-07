@@ -34,6 +34,7 @@ import { UserRecipeComponent } from './user-recipe/user-recipe.component';
     UserRecipeComponent,
     UserDashboardComponent
   ],
+
   imports: [
     CommonModule,
     LayoutsRoutingModule,
@@ -44,13 +45,21 @@ import { UserRecipeComponent } from './user-recipe/user-recipe.component';
     FootcatComponent,
     TitleBlockComponent,
     UserCardComponent,
-
     SocialsComponent,
     FooterComponent,
     PrimaryButtonComponent,
     NavbarComponent,
     UserCardComponent
   ],
-  exports: [LandingPageComponent, RecipePageComponent, UserRecipeComponent],
+  
+  exports: [
+    LandingPageComponent,
+    RecipePageComponent,
+    ContactUsComponent,
+    BlogsDescriptionComponent,
+    BlogsComponent,
+    UserRecipeComponent,
+    UserDashboardComponent
+  ],
 })
 export class LayoutsModule {}

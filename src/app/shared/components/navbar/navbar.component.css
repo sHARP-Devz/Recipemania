@@ -40,3 +40,11 @@ nav ul li{
     width: 35px;
     height: 35px;
 }
+
+.categories{
+    left: auto !important;
+    right: -50% !important; 
+    transform: translateX(0px); 
+    border: none;
+    background-color: transparent;
+  }
