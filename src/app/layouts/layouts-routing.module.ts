@@ -7,6 +7,7 @@ import { RecipePageComponent } from './recipe-page/recipe-page.component';
 import { BlogsComponent } from './blogs/blogs.component';
 import { BlogsDescriptionComponent } from './blogs-description/blogs-description.component';
 import { AddRecipeComponent } from './add-recipe/add-recipe.component';
+import { UserDashboardComponent } from './user-dashboard/user-dashboard.component';
 
 const routes: Routes = [
   {
@@ -19,7 +20,7 @@ const routes: Routes = [
       { path: 'blogs-des', component: BlogsDescriptionComponent },
       { path: 'contactus', component: ContactUsComponent },
       { path: 'addrecipe', component: AddRecipeComponent },
-
+      { path: 'user-dashboard', component: UserDashboardComponent }
     ],
   },
 ];

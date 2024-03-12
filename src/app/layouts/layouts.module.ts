@@ -21,6 +21,7 @@ import { PrimaryButtonComponent } from '../shared/components/primary-button/prim
 import { NavbarComponent } from '../shared/components/navbar/navbar.component';
 import { UserCardComponent } from '../shared/components/user-card/user-card.component';
 import { AddRecipeComponent } from './add-recipe/add-recipe.component';
+import { UserDashboardComponent } from './user-dashboard/user-dashboard.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { AddRecipeComponent } from './add-recipe/add-recipe.component';
     ContactUsComponent,
     BlogsDescriptionComponent,
     BlogsComponent,
-    AddRecipeComponent
+    AddRecipeComponent,
+    UserDashboardComponent
   ],
   imports: [
     CommonModule,
@@ -42,6 +44,7 @@ import { AddRecipeComponent } from './add-recipe/add-recipe.component';
     FootcatComponent,
     TitleBlockComponent,
     UserCardComponent,
+
     SocialsComponent,
     FooterComponent,
     PrimaryButtonComponent,

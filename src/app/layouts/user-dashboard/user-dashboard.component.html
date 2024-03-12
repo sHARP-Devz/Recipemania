@@ -1,0 +1,60 @@
+<app-navbar [backgroundColor]="'#000'" [textColor]="'#FFF'"></app-navbar>
+<app-title-block [title]="'Dashboard'" [height]="61"></app-title-block>
+<div class="d-flex px-5 wrapper">
+  <app-user-card class="side-bar my-4"></app-user-card>
+  <div class = "p-3">
+    <p class= "title mt-4 mb-5">Profile</p>
+    <form>
+      <div class="row g-4 mt-5">
+        <div class="col-md-6">
+          <label for="firstName" class="form-label">First Name</label>
+          <input type="text" class="form-control" id="firstName">
+        </div>
+        <div class="col-md-6">
+          <label for="lastName" class="form-label">Last Name</label>
+          <input type="text" class="form-control" id="lastName">
+        </div>
+        <div class="col-md-6">
+          <label for="firstName" class="form-label">Username</label>
+          <input type="text" class="form-control" id="firstName">
+        </div>
+        <div class="col-md-6">
+          <label for="inputEmail" class="form-label">Email</label>
+          <input type="email" class="form-control" id="inputEmail">
+        </div>
+        <div class="col-md-6">
+          <label for="country" class="form-label">Country</label>
+          <input type="text" class="form-control" id="country">
+        </div>
+        <div class="col-md-6 ">
+          <label for="inputPassword" class="form-label">Password</label>
+          <input type="password" class="form-control" id="inputPassword">
+        </div>
+        <div class="col-md-12">
+          <label for="inputDescription" class="form-label">Description</label>
+          <input type="text" class="form-control" id="inputDescription">
+        </div>
+        <label for="inputGender" class="form-label ">Gender</label>
+        <div class="row g-2">
+          <div class="col-md-5">
+            <div class="form-check form-check-inline pe-4">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inputFemale" value="option1">
+              <label class="f`1orm-check-label" for="inputFemale">Female</label>
+            </div>
+            <div class="form-check form-check-inline ps-5">
+              <input class="form-check-input ms-5" type="radio" name="inlineRadioOptions" id="inputMale" value="option2">
+              <label class="form-check-label" for="inputMale">Male</label>
+            </div>
+          </div>
+          <div class="col-md-7">
+            <div class="input-group pb-3">
+              <button (click)="fileInput.click()"  class="input-group-text" for="inputImage">UPLOAD IMAGE</button>
+              <input #fileInput type="file" (change)="onFileSelected($event)" class="file-control d-none" id="inputImage">
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+

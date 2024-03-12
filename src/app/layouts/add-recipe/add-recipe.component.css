@@ -1,46 +1,45 @@
 .form-group input[type="text"],
-  .form-group select,
-  .form-group textarea {
-    margin-bottom: 25px;
+.form-group select,
+.form-group textarea {
+  margin-bottom: 25px;
+}
+
+label {
+  min-width: 120px;
+}
+
+.form-group {
+  display: flex;
+
+}
+
+
+.difficulty-options {
+  display: flex;
+  justify-content: space-between !important;
+}
+
+@media (max-width: 768px) {
+
+  h4 {
+    padding-left: 30px;
   }
 
-  label{
-    min-width: 120px;
+  .form-group label {
+    padding-top: 10px;
   }
 
-  .form-group{
-    display: flex;
-    
+  .form-group {
+    display: grid;
+    margin-left: 30px;
   }
-  
+
 
   .difficulty-options {
-    display: flex;
-    justify-content: space-between !important;
+    display: grid;
   }
 
-  @media  (max-width: 768px) {
-
-    h4{
-      padding-left: 30px;
-    }
-
-    .form-group label{
-      padding-top: 10px;
-    }
-
-    .form-group {
-      display: grid;
-      margin-left: 30px;
-    }
-   
-
-    .difficulty-options {
-      display: grid;
-      /* justify-content: space-between !important; */
-    }
-
-    .prepare-cook{
-      display: grid;
-    }
+  .prepare-cook {
+    display: grid;
   }
+}
