@@ -21,6 +21,7 @@ import { PrimaryButtonComponent } from '../shared/components/primary-button/prim
 import { NavbarComponent } from '../shared/components/navbar/navbar.component';
 import { UserDashboardComponent } from './user-dashboard/user-dashboard.component';
 import { UserCardComponent } from '../shared/components/user-card/user-card.component';
+import { UserRecipeComponent } from './user-recipe/user-recipe.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { UserCardComponent } from '../shared/components/user-card/user-card.comp
     ContactUsComponent,
     BlogsDescriptionComponent,
     BlogsComponent,
+    UserRecipeComponent,
     UserDashboardComponent
   ],
   imports: [
@@ -47,7 +49,8 @@ import { UserCardComponent } from '../shared/components/user-card/user-card.comp
     FooterComponent,
     PrimaryButtonComponent,
     NavbarComponent,
+    UserCardComponent
   ],
-  exports: [LandingPageComponent, RecipePageComponent],
+  exports: [LandingPageComponent, RecipePageComponent, UserRecipeComponent],
 })
 export class LayoutsModule {}
