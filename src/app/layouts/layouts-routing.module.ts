@@ -8,6 +8,7 @@ import { BlogsComponent } from './blogs/blogs.component';
 import { BlogsDescriptionComponent } from './blogs-description/blogs-description.component';
 import { UserDashboardComponent } from './user-dashboard/user-dashboard.component';
 import { FirstRecipeComponent } from './first-recipe/first-recipe.component';
+import { UserRecipeComponent } from './user-recipe/user-recipe.component';
 
 const routes: Routes = [
   {
@@ -20,7 +21,8 @@ const routes: Routes = [
       { path: 'blogs-des', component: BlogsDescriptionComponent },
       { path: 'contactus', component: ContactUsComponent },
       { path: 'user-dashboard', component: UserDashboardComponent },
-      {path: 'first-recipe', component: FirstRecipeComponent}
+      {path: 'first-recipe', component: FirstRecipeComponent},
+      { path: 'userrecipe', component: UserRecipeComponent}
     ],
   },
 ];

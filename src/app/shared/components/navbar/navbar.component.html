@@ -18,23 +18,19 @@
     <div class="nav-menu" id="navbarSupportedContent" *ngIf="!isMobile || toggle">
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-bold cursor-pointer list-unstyled" [style.color]="textColor">
         <li class="nab-item pe-2">
-          <a class="nav-link" [style.color]="textColor" href="#">Home</a>
+          <a class="nav-link" routerLink="/layouts/home" [style.color]="textColor" href="#">Home</a>
         </li>
-        <li  class="nav-item pe-2" >
-          <a (click)="isCatOpen()" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" [style.color]="textColor">Categories</a>
-          <div *ngIf="isCat" class="categories dropdown position-absolute " aria-labelledby="categoriesDropdown">
-            <app-categories ></app-categories>
-          </div>
+        <li class="nav-item pe-2">
+          <a class="nav-link"  [style.color]="textColor"href="#">Categories</a>
         </li>
         <li class="nav-item pe-2">
           <a routerLink = "/layouts/recipe" [style.color]="textColor" class="nav-link">Recipes</a>
         </li>
         <li  class="nav-item pe-2">
-          <a class="nav-link" [style.color]="textColor" href="#">Blogs</a>
-          
+          <a class="nav-link" routerLink="/layouts/blogs" [style.color]="textColor" href="#">Blogs</a>
         </li>
         <li router class="nav-item pe-2">
-          <a class="nav-link" [style.color]="textColor" href="#">Contact Us</a>
+          <a class="nav-link" routerLink="/layouts/contactus" [style.color]="textColor" href="#">Contact Us</a>
         </li>
         <li (click)="loginModaltoggle(true)" class="nav-item">
           <a class="nav-link cursor-pointer" [style.color]="textColor">Login/Register</a>
@@ -42,12 +38,10 @@
       </ul>
     </div>
 
-    <div class="profile d-flex align-items-center"  [style.display]="displayDiv">
+    <div class="profile d-flex align-items-center d-none"  [style.display]="displayDiv">
       <img class="profile-dp me-2" src="../../assets/images/dp.png">
       <mat-icon [style.color]="textColor">keyboard_arrow_down</mat-icon>
 
     </div>
   </div>
-
- 
 </nav>
