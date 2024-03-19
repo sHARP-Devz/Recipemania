@@ -20,14 +20,18 @@
         <li class="nab-item pe-2">
           <a class="nav-link" [style.color]="textColor" href="#">Home</a>
         </li>
-        <li class="nav-item pe-2" >
-          <a class="nav-link " [style.color]="textColor"href="#">Categories</a>
+        <li  class="nav-item pe-2" >
+          <a (click)="isCatOpen()" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" [style.color]="textColor">Categories</a>
+          <div *ngIf="isCat" class="categories dropdown position-absolute " aria-labelledby="categoriesDropdown">
+            <app-categories ></app-categories>
+          </div>
         </li>
         <li class="nav-item pe-2">
           <a routerLink = "/layouts/recipe" [style.color]="textColor" class="nav-link">Recipes</a>
         </li>
         <li  class="nav-item pe-2">
           <a class="nav-link" [style.color]="textColor" href="#">Blogs</a>
+          
         </li>
         <li router class="nav-item pe-2">
           <a class="nav-link" [style.color]="textColor" href="#">Contact Us</a>
@@ -44,4 +48,6 @@
 
     </div>
   </div>
+
+ 
 </nav>

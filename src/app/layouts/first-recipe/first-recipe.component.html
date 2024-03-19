@@ -1,0 +1,277 @@
+<app-navbar [backgroundColor]="'#000'" [textColor]="'#FFF'"></app-navbar>
+<app-title-block class="block" [height]="50" [title]="'Garlic Shrimp Linguine'"
+  [breadcrumbs]="[{ label: 'Home', link: '/layouts/home' }, { label: 'Blogs' }]"></app-title-block>
+
+
+<!------- content left--- -->
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-8">
+      <div class="main" style="background-color: #F9F9F9; width: 580px;">
+        <h3>Garlic Shrimp Linguine</h3>
+        <div class="small">
+          <div class="info">
+            <img src="assets/images/eye.png">
+            <p>150</p>
+          </div>
+          <div class="info">
+            <img src="assets/images/time.png">
+            <p>Last Update: Feb 03, 2024</p>
+          </div>
+          <div class="info">
+            <img src="assets/images/calen.png">
+            <p>Created: Feb 02, 2024</p>
+          </div>
+        </div>
+        <div class="image-container">
+          <img [src]="images[currentImageIndex]" alt="Image" class="small-image">
+          <div class="button-container">
+            <button (click)="previousImage()"><img src="assets/images/left.png" alt=""
+                style="width: 5px; height:5px;"></button>
+            <button (click)="nextImage()"><img src="assets/images/right.png" alt="" style="width: 5px; height:5px;">
+            </button>
+          </div>
+        </div>
+        <div class="extra d-flex mt-3">
+          <ul>
+            <li>Serves:</li>
+            <p>7 People</p>
+          </ul>
+          <li class="vert-divider"></li>
+          <ul>
+            <li>Prepare Time:</li>
+            <p>15 mins</p>
+          </ul>
+          <li class="vert-divider"></li>
+          <ul>
+            <li>Cooking Time:</li>
+            <p>15 mins</p>
+          </ul>
+          <li class="vert-divider"></li>
+          <ul>
+            <li>Calories:</li>
+            <p>500</p>
+          </ul>
+          <li class="vert-divider"></li>
+          <ul>
+            <li>Difficulty:</li>
+            <p>Meduim</p>
+          </ul>
+          <div>
+            <button class="print"><img src="assets/images/print.png" style="margin-right: 7px;">PRINT</button>
+          </div>
+        </div>
+      </div>
+      <div class="about mt-2">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis impedit cum.<br> inventore quisquam
+        perferendis sed fuga nesciunt repellat, ipsum similique!
+      </div>
+      <div class="mt-4">
+        <youtube-player videoId="L6yX6Oxy_J8" [width]="560" [height]="350"></youtube-player>
+      </div>
+
+      <h2 class="mt-3">Ingredients</h2>
+      <div class="plus mt-3 border-box">
+        <ul class="line">
+          <li class=""><input type="checkbox" class=" ms-5"><label class="ms-2">Chicken</label></li>
+          <li><input type="checkbox" class=" ms-5"><label class="ms-2">3 table spoon vegetable oil</label></li>
+          <li><input type="checkbox" class=" ms-5"><label class="ms-2">2 cubes of maggi</label></li>
+          <li><input type="checkbox" class=" ms-5"><label class="ms-2">2 large onion, chopped</label></li>
+          <li><input type="checkbox" class=" ms-5"><label class="ms-2">2 tablespoon of curry</label></li>
+          <li><input type="checkbox" class=" ms-5"><label class="ms-2">2 tablespoon of tyme</label></li>
+          <li><input type="checkbox" class=" ms-5"><label class="ms-2">2 teaspoon of black peppery</label></li>
+          <li><input type="checkbox" class=" ms-5"><label class="ms-2">2 tablespoon of curry</label></li>
+          <li><input type="checkbox" class=" ms-5"><label class="ms-2">2 chicken</label></li>
+          <li><input type="checkbox" class=" ms-5"><label class="ms-2">2 chicken</label></li>
+        </ul>
+      </div>
+
+      <h2 class="mt-3">Directions</h2>
+      <div class="numbered-list me-4">
+        <ul>
+          <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tincidunt amet, porta morbi mauris.
+          </li>
+          <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tincidunt amet, porta morbi mauris.</li>
+          <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tincidunt amet, porta morbi mauris.
+          </li>
+          <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tincidunt amet, porta morbi mauris.
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!--------- About user right-------->
+    <div class="col-md-4">
+      <form style="display: flex; align-items: center;">
+        <input class="form-control" style="width: 160px; height: 50px; border-radius: 1px;" type="search"
+          placeholder="Search for Recipies">
+        <button class="btn " type="submit" style=" width: 46px; height: 50px;border-radius: 1px;"><img
+            src="assets/images/search.png" alt="" style="width: 12px; height: 12px"></button>
+      </form>
+
+      <div class="bordered-text mt-3 d-flex align-items-start justify-content-between">
+        <div>
+          <p class="mb-0" style="color: #FFBD3F;">Author</p>
+          <p class="mb-0" style="font-weight: 700;">Bambam</p>
+          <p class="mb-0" style="color: #C4C4C4; font-size: 10px;">Ayo@user.com</p>
+          <p class="mt-4" style="color: #C4C4C4;">Lorem ipsum dolor sit amet consectetur.</p>
+        </div>
+        <img src="assets/images/user.png" style="width: 35px; height:37px;">
+      </div>
+
+      <div class="categorigies mt-3">
+        <h3 style="font-size: large;">Categories</h3>
+        <app-footcat></app-footcat>
+      </div>
+      <div>
+        <h3 class="mt-3">Popular Recipes</h3>
+        <div class="bottom">
+          <div class="row">
+            <div class="col-auto">
+              <img src="assets/images/garlic.png">
+            </div>
+            <div class="col">
+              <p class="mb-0">Garlic Shrimps</p>
+              <p class="mb-0" style="color: #FFBD3F;">View Recipes</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-auto">
+              <img src="assets/images/garlic.png">
+            </div>
+            <div class="col">
+              <p class="mb-0">Chocolate Cake</p>
+              <p class="mb-0" style="color: #FFBD3F;">View Recipes</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-auto">
+              <img src="assets/images/garlic.png">
+            </div>
+            <div class="col">
+              <p class="mb-0">Garlic Shrimps</p>
+              <p class="mb-0" style="color: #FFBD3F;">View Recipes</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-auto">
+              <img src="assets/images/garlic.png">
+            </div>
+            <div class="col">
+              <p class="mb-0">Chicken</p>
+              <p class="mb-0" style="color: #FFBD3F;">View Recipes</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-auto">
+              <img src="assets/images/garlic.png">
+            </div>
+            <div class="col">
+              <p class="mb-0">Garlic Shrimps</p>
+              <p class="mb-0" style="color: #FFBD3F;">View Recipes</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-auto">
+              <img src="assets/images/garlic.png">
+            </div>
+            <div class="col">
+              <p class="mb-0">Coffee</p>
+              <p class="mb-0" style="color: #FFBD3F;">View Recipes</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12 pe-2">
+      <h2>You may also like</h2>
+      <div class="recipe-container d-flex">
+        <div *ngFor="let image of recipe" class="recipebox">
+          <!-- Recipe Image -->
+          <img [src]="image.url" [alt]="image.name" style="cursor: pointer; margin-left: 20px;">
+
+          <!-- Recipe Name -->
+          <p class="recipe-name ps-4">{{ image.name }}</p>
+
+          <!-- User Profile -->
+          <div *ngFor="let profile of userProfile" class="profile">
+            <img [src]="profile.url" [alt]="profile.name">
+            {{ profile.name }}
+          </div>
+        </div>
+      </div>
+      <h2 class="mt-2">Add your Comment</h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="idea">
+        <p>What do you think?</p>
+        <p>23 Responses</p>
+        <div class="emojis d-flex">
+          <img src="assets/images/frown.png">
+          <img src="assets/images/thumbs.png">
+          <img src="assets/images/heart-eyes.png">
+        </div>
+      </div>
+      <div class="user">
+        <div class="comments d-flex mt-4">
+          <p>0 Comments</p>
+          <p class="ms-5">Bambam</p>
+        </div>
+        <div class="time d-flex">
+          <img src="assets/images/love.png" style="width: 13px; height: 11px;" class="mt-1">
+          <h5 class="ms-3">Favourite</h5>
+          <p class="ms-4">1</p>
+        </div>
+        <div class="field d-flex">
+          <img src="assets/images/cont.png">
+          <form>
+            <input class="ms-4" type="text" placeholder="start the discussion...">
+          </form>
+        </div>
+        <div class="login">
+          <p>LOGIN WITH</p>
+        </div>
+        <div class="socials d-flex ms-5">
+          <div class="face ms-2">
+            <img src="assets/images/face.png">
+          </div>
+          <div class="twit ms-2">
+            <img src="assets/images/twit.png">
+          </div>
+          <div class="ig ms-2">
+            <img src="assets/images/ig.png">
+          </div>
+          <div class="cord ms-3">
+          <p>OR SIGN UP WITH DISCORD?</p>
+          <form>
+            <input class="ms-4" type="text" placeholder="NAME">
+          </form>
+        </div>
+        </div>
+        <div class="the-end mt-5">
+          <p>Be the first to comment</p>
+            <li class="vert-divider mt-5"></li>
+          <div class="ending d-flex">
+            <ul>
+              
+              <li> <img src="assets/images/mail.png" class="me-1">Subscribe</li>
+            </ul>
+            <ul>
+              <li><img src="assets/images/d.png" class="me-1">Add recipemania to your website</li>
+            </ul>
+            <ul>
+              <li><img src="assets/images/alert.png" class="me-1">Do Not Sell My Data</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<app-socials></app-socials>
+<app-footer></app-footer>
