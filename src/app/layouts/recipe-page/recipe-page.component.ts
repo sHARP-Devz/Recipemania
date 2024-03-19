@@ -24,7 +24,6 @@ export class RecipePageComponent {
   @Input() rating: number = 4;
   maxRating: number = 5;
   
-  
   categoriesShow: boolean = false;
 
   get filledStars(): number[] {
@@ -39,6 +38,6 @@ export class RecipePageComponent {
   }
 
   toggleCategories(){
-    this.categoriesShow = !this.categoriesShow
+    this.categoriesShow = !this.categoriesShow;
   }
 }
