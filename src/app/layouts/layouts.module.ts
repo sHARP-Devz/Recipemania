@@ -22,6 +22,8 @@ import { NavbarComponent } from '../shared/components/navbar/navbar.component';
 import { UserDashboardComponent } from './user-dashboard/user-dashboard.component';
 import { UserCardComponent } from '../shared/components/user-card/user-card.component';
 import { UserRecipeComponent } from './user-recipe/user-recipe.component';
+import { YouTubePlayerModule } from '@angular/youtube-player';
+import { FirstRecipeComponent } from './first-recipe/first-recipe.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,8 @@ import { UserRecipeComponent } from './user-recipe/user-recipe.component';
     BlogsDescriptionComponent,
     BlogsComponent,
     UserRecipeComponent,
-    UserDashboardComponent
+    UserDashboardComponent,
+    FirstRecipeComponent
   ],
   imports: [
     CommonModule,
@@ -44,7 +47,7 @@ import { UserRecipeComponent } from './user-recipe/user-recipe.component';
     FootcatComponent,
     TitleBlockComponent,
     UserCardComponent,
-
+    YouTubePlayerModule,
     SocialsComponent,
     FooterComponent,
     PrimaryButtonComponent,
