@@ -6,6 +6,7 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
 import { RecipePageComponent } from './recipe-page/recipe-page.component';
 import { BlogsComponent } from './blogs/blogs.component';
 import { BlogsDescriptionComponent } from './blogs-description/blogs-description.component';
+import { AddRecipeComponent } from './add-recipe/add-recipe.component';
 import { UserDashboardComponent } from './user-dashboard/user-dashboard.component';
 import { FirstRecipeComponent } from './first-recipe/first-recipe.component';
 import { UserRecipeComponent } from './user-recipe/user-recipe.component';
