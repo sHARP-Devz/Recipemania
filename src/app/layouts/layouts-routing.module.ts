@@ -18,7 +18,7 @@ const routes: Routes = [
       { path: 'home', component: LandingPageComponent },
       { path: 'recipe', component: RecipePageComponent },
       { path: 'blogs', component: BlogsComponent },
-      { path: 'blogs-des', component: BlogsDescriptionComponent },
+      { path: 'blog', component: BlogsDescriptionComponent },
       { path: 'contactus', component: ContactUsComponent },
       { path: 'user-dashboard', component: UserDashboardComponent },
       {path: 'first-recipe', component: FirstRecipeComponent},

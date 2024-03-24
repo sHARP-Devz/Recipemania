@@ -15,5 +15,6 @@ export class TitleBlockComponent {
   @Input() title: string = 'title';
   @Input() color: string = 'color';
   // @Input() font-size: string = 'color';
+  // @Input() breadcrumbs: Breadcrumb[] = [];
   @Input() breadcrumbs: { label: string; link?: string }[] = [];
 }
