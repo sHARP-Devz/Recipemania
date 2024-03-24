@@ -1,3 +1,8 @@
+.recipe-container{
+    column-gap: 4em;
+    row-gap: 2em;
+}
+
 .vert-divider {
     width: 100%;
     height: 1px;
@@ -13,6 +18,7 @@
     background-color: #ccc;
     border-radius: 50%;
     color: white;
+    font-size: 1.5em;
 }
 
 .recipe{
@@ -39,4 +45,50 @@
 
 .recipe:hover .icon-round-delete {
     background: rgb(249, 42, 42);
+}
+
+th{
+    padding-right: 4em
+}
+
+td{
+    
+}
+
+@media screen and (max-width: 768px) {
+     .recipe-img{
+        width: 100%;
+    }
+
+   .recipe-img img{
+        width: 70%;
+    }
+
+    th{
+        font-size: 0.75em;
+        padding-right: 1em;
+
+    }
+
+    td{
+        font-size: 0.75em;
+        text-wrap: nowrap;
+    }
+
+    .icon-round-visibility,
+    .icon-round-edit,
+    .icon-round-delete {
+    width: 16px;
+    height: 16px;
+    background-color: #ccc;
+    border-radius: 50%;
+    color: white;
+    font-size: 2em;
+}
+
+
+    .recipe-icons{
+        font-size: 0.5em;
+    }
+
 }

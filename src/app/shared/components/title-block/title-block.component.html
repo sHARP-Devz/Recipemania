@@ -1,7 +1,4 @@
-<div
-  class="w-100 custom-bg"
-  [style.height.px]="height"
->
+<div class="w-100 custom-bg" [style.height.px]="height">
   <div class="w-100 d-flex align-items-center justify-content-between">
     <h1>{{ title }}</h1>
 
@@ -32,14 +29,16 @@
           [routerLink]="breadcrumb.link"
         >
           <p class="another-margin-again">{{ breadcrumb.label }}</p>
-          <mat-icon class="custom-fw pe-4 mb-1">keyboard_arrow_right</mat-icon>
+          <mat-icon class="custom-fw pe-4 mb-1 arrow1"
+            >keyboard_arrow_right</mat-icon
+          >
         </a>
       </ng-container>
       <ng-container *ngIf="last">
-        <p class="another-margin-again">{{ breadcrumb.label }}</p>
+        <p class="responsive another-margin-again">{{ breadcrumb.label }}</p>
       </ng-container>
     </ng-container>
   </div>
 </div> -->
 
-<!-- pe-4 -->
+<!-- </div> -->

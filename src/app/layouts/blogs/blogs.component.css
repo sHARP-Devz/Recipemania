@@ -25,6 +25,23 @@
   text-align: left;
 }
 
+.button-div {
+  width: 59.55px;
+  height: 30.06px;
+  background: #fda47a;
+  padding: 7px;
+  padding-top: 10px;
+}
+
+.read-more {
+  color: white;
+  font-family: Montserrat;
+  font-size: 7px;
+  font-weight: 700;
+  line-height: 9px;
+  letter-spacing: 0em;
+}
+
 .nav-item {
   font-family: Montserrat;
   font-size: 15px;
@@ -37,10 +54,6 @@
 .make-your-own {
   font-family: Montserrat;
   font-size: 25px;
-  font-weight: 400;
-  line-height: 30px;
-  letter-spacing: 0em;
-  text-align: left;
 }
 
 .fs {
@@ -71,6 +84,14 @@
   letter-spacing: 0em;
 }
 
+.blog-item {
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+}
+
 .visited-blogs {
   font-family: Montserrat;
   font-size: 35px;
@@ -78,7 +99,8 @@
   line-height: 43px;
   letter-spacing: 0em;
 }
-.blog-item {
+.blog-item-border {
+  border-bottom: 0.6px solid #c4c4c4;
   font-family: Montserrat;
   font-size: 20px;
   font-weight: 400;
@@ -87,6 +109,10 @@
 }
 .move-right {
   margin-left: 5px;
+}
+
+.move-right-div {
+  margin-left: 300px;
 }
 
 .move-right-again {
@@ -127,6 +153,10 @@
   background: black;
 }
 
+.small-screen {
+  display: none;
+}
+
 @media screen and (max-width: 992px) {
   .navbar-contain {
     background: white;
@@ -141,16 +171,60 @@
     /* margin-bottom: 200px; */
   }
   .make-your-own {
-    font-size: 20px;
+    font-size: 10px;
+  }
+
+  .make-small {
+    font-family: Montserrat;
+    font-size: 9px;
+    font-weight: 400;
+    line-height: 11px;
+    letter-spacing: 0em;
+  }
+
+  .icon {
+    width: 7.33px;
+    height: 8.75px;
+  }
+
+  .fs {
+    font-family: Montserrat;
+    font-size: 6px;
+    font-weight: 400;
+    line-height: 7px;
+    letter-spacing: 0em;
   }
 
   .navbar {
     background: white;
   }
 
-  /* .navbar {
-    background: black;
-  } */
+  .main-img {
+    /* width: 10px; */
+    /* height: 10px; */
+    width: 100.26px;
+    height: 100.55px;
+  }
+  .meal-img {
+    width: 130px;
+    height: 130px;
+  }
+  .small-screen {
+    display: block;
+    margin-right: 400px;
+  }
+
+  .big-screen {
+    display: none;
+  }
+
+  .hide-div {
+    display: none;
+  }
+
+  .move-right-div {
+    margin: 0 auto;
+  }
 }
 
 .container {
@@ -173,4 +247,33 @@
 
 .nav-link {
   color: white;
+}
+
+.add-contain {
+  display: flex;
+  margin-top: 60px;
+  padding-right: 300px;
+}
+
+.circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #fda47a;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle-1 {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #c4c4c4;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px;
 }

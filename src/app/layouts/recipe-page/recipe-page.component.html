@@ -28,11 +28,11 @@
     <div class="ps-4">
       <div class="row">
         <!-- recipe cards with data required to come from the Backend -->
-        <div *ngFor= "let image of images; let i = index" class="col-12 col-md-6 col-sm-3 m-5 p-3 recipebox ">
-          <img [src]= "image.url" alt="image.name"/>
+        <div *ngFor= "let image of images; let i = index"  class="col-12 col-md-6 col-sm-3 m-5 p-3 recipebox ">
+          <img style="cursor: pointer;" [src]= "image.url" alt="image.name" routerLink="/layouts/first-recipe"/>
           <p class="image fw-bold">{{image.name}}</p>
           <span class="profile fw-bold" *ngFor= "let profile of userProfile">
-            <img [src]= "profile.url" alt="user"/>
+            <img  [src]= "profile.url" alt="user" >
             {{profile.name}}
           </span>
           <div class="p-3 ps-5 star-rating">

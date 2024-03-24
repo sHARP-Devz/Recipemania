@@ -20,8 +20,11 @@ import { FooterComponent } from '../shared/components/footer/footer.component';
 import { PrimaryButtonComponent } from '../shared/components/primary-button/primary-button.component';
 import { NavbarComponent } from '../shared/components/navbar/navbar.component';
 import { UserCardComponent } from '../shared/components/user-card/user-card.component';
-import { AddRecipeComponent } from './add-recipe/add-recipe.component';
+import { UserRecipeComponent } from './user-recipe/user-recipe.component';
+import { YouTubePlayerModule } from '@angular/youtube-player';
+import { FirstRecipeComponent } from './first-recipe/first-recipe.component';
 import { UserDashboardComponent } from './user-dashboard/user-dashboard.component';
+import { AddRecipeComponent } from './add-recipe/add-recipe.component';
 
 @NgModule({
   declarations: [
@@ -31,8 +34,11 @@ import { UserDashboardComponent } from './user-dashboard/user-dashboard.componen
     ContactUsComponent,
     BlogsDescriptionComponent,
     BlogsComponent,
-    AddRecipeComponent,
-    UserDashboardComponent
+    UserRecipeComponent,
+    FirstRecipeComponent,
+    UserDashboardComponent,
+    AddRecipeComponent
+
   ],
   imports: [
     CommonModule,
@@ -44,12 +50,13 @@ import { UserDashboardComponent } from './user-dashboard/user-dashboard.componen
     FootcatComponent,
     TitleBlockComponent,
     UserCardComponent,
-
+    YouTubePlayerModule,
     SocialsComponent,
     FooterComponent,
     PrimaryButtonComponent,
     NavbarComponent,
+    UserCardComponent
   ],
-  exports: [LandingPageComponent, RecipePageComponent],
+  exports: [LandingPageComponent, RecipePageComponent, UserRecipeComponent],
 })
 export class LayoutsModule {}

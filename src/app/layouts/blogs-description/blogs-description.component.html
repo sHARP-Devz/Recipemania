@@ -1,11 +1,3 @@
-<!-- <app-navbar></app-navbar> -->
-<!-- <div class="container"> -->
-<!-- <app-navbar></app-navbar> -->
-<!-- </div> -->
-
-<!-- adding a dark background and a light text -->
-<!-- bg-dark text-light -->
-
 <nav class="navbar navbar-contain navbar-expand-lg">
   <div class="container-fluid">
     <div class="d-flex move-right-again">
@@ -63,7 +55,8 @@
 
 <div class="mt-5">
   <app-title-block
-    [height]="80"
+    class=""
+    [height]="60"
     [title]="'Make your own chicken'"
     [breadcrumbs]="[
       { label: 'Home', link: '/layouts/home' },
@@ -73,38 +66,48 @@
   ></app-title-block>
 </div>
 
-<div class="container-fluid py-3 mx-5 adjust-again">
+<div class="container-fluid margin-body">
   <div class="row">
     <div class="col-md-12">
       <div *ngFor="let blog of blogsData" class="blog-item">
         <div>
-          <div class="blog-meal row mb-4">
-            <div class="row">
-              <div class="meal-details col-7">
-                <h4 class="mb-3 make-your-own fs-sm-6 fs-md-4 fs-lg-2">
-                  {{ blog.title }}
-                </h4>
-                <div class="meal-details-dates d-flex mb-2">
-                  <div class="detail d-flex pe-2 align-items-center">
-                    <img
-                      src="assets/blog-images/ant-design_eye-filled.svg"
-                      alt="design"
-                      class="icon"
-                    />
-                    <span class="fs">{{ blog.views }}</span>
+          <!-- row px-5 my-3 -->
+          <div class="blog-meal row mb-1">
+            <div class="px-5">
+              <div class="meal-details col-sm-12">
+                <div class="">
+                  <h4 class="fs-sm-4 fs-md-4 fs-lg-2 fw-bold font-title fs-6">
+                    {{ blog.title }}
+                  </h4>
+                  <div class="meal-details-dates d-flex mb-2 gap-1">
+                    <div class="d-flex align-items-center text-wrap">
+                      <!-- detail fs-5 d-flex align-items-center pe-2 -->
+                      <mat-icon class="custom-icon-4">visibility</mat-icon>
+                      <span class="fs">{{ blog.views }}</span>
+                    </div>
+                    <div class="detail d-flex align-items-center">
+                      <mat-icon class="custom-icon-4">schedule</mat-icon>
+                      <span class="fs">{{ blog.time }}</span>
+                    </div>
+                    <div class="detail d-flex align-items-center">
+                      <mat-icon class="custom-icon-4">calendar_today</mat-icon>
+                      <span class="fs fs-sm-6">Created : Feb 05, 2022</span>
+                    </div>
                   </div>
-                  <div class="detail d-flex align-items-center">
+                </div>
+                <!-- main-img -->
+                <div class="row">
+                  <div class="col-lg-6 col-md-6 col-sm-12">
                     <img
-                      src="assets/blog-images/bx_bx-time-five.svg"
-                      alt=""
-                      class="icon"
+                      src="assets/blog-images/img-1.png"
+                      class="img-fluid w-100 h-100"
+                      alt="Responsive Image"
                     />
-                    <span class="fs">{{ blog.time }}</span>
                   </div>
-                  <!-- main-img -->
-                  <div class="meal-img pe-2">
-                    <img [src]="blog.image" alt="" class="img-fluid main-img" />
-                    <p class="fs-6">{{ blog.description }}</p>
+                  <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                      <p class="fs-6 p-1">{{ blog.description }}</p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -114,82 +117,259 @@
       </div>
     </div>
     <div class="row">
-      <div class="container">
+      <div class="mx-5">
         <p class="add-font">You may also like</p>
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-          <div class="col add-width">
+      </div>
+
+      <div class="container">
+        <div
+          class="d-flex align-items-center justify-content-around flex-column gap-5 flex-lg-row responsive-margin"
+        >
+          <div class="add-width-again">
             <div class="card add-color">
-              <div class="">
+              <div class="px-3 my-3 add-radius">
                 <img
-                  src="assets/blog-images/Rectangle 534.jpg"
-                  class="add-img-width"
+                  src="assets/blog-images/Rectangle 534.svg"
+                  class="add-img-width img-fluid"
                   alt="e no dey here"
                 />
-              </div>
 
-              <div class="card-body">
-                <h5 class="card-title">Chicken</h5>
+                <h2 class="card-title">Chicken</h2>
 
-                <div class="card-text d-flex align-items-center">
+                <div class="card-text d-flex align-items-center mb-3 gap-2">
                   <div>
                     <img src="assets/blog-images/Ellipse 54.svg" alt="" />
                   </div>
-                  <div>Bambam</div>
+                  <div class="change-font">Bambam</div>
+                </div>
+                <div class="d-flex justify-content-center align-items-center">
+                  <div>
+                    <img src="assets/blog-images/Star 5.svg" alt="" />
+                  </div>
+                  <div>
+                    <img src="assets/blog-images/Star 5.svg" alt="" />
+                  </div>
+                  <div>
+                    <img src="assets/blog-images/Star 5.svg" alt="" />
+                  </div>
+                  <div>
+                    <img src="assets/blog-images/Star 8.svg" alt="" />
+                  </div>
                 </div>
               </div>
-              <div class="card-footer">
-                <small class="text-body-secondary"
-                  >Last updated 3 mins ago</small
-                >
-              </div>
             </div>
           </div>
-          <div class="col add-width">
-            <div class="card h-100 add-color">
-              <img
-                src="assets/blog-images/Rectangle 324.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  This card has supporting text below as a natural lead-in to
-                  additional content.
-                </p>
-              </div>
-              <div class="card-footer">
-                <small class="text-body-secondary"
-                  >Last updated 3 mins ago</small
-                >
-              </div>
-            </div>
-          </div>
-          <div class="col add-width">
-            <div class="card h-100 add-color">
-              <img
-                src="assets/blog-images/Rectangle 331.jpg"
-                class="card-img-top add-img-width"
-                alt="..."
-              />
+          <div class="add-width-again">
+            <div class="card add-color">
+              <div class="px-3 my-3">
+                <img
+                  src="assets/blog-images/Rectangle 534.svg"
+                  class="add-img-width img-fluid"
+                  alt="e no dey here"
+                />
 
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  This is a wider card with supporting text below as a natural
-                  lead-in to additional content. This card has even longer
-                  content than the first to show that equal height action.
-                </p>
-              </div>
-              <div class="card-footer">
-                <small class="text-body-secondary"
-                  >Last updated 3 mins ago</small
-                >
+                <h2 class="card-title">Chicken</h2>
+
+                <div class="card-text d-flex align-items-center mb-3 gap-2">
+                  <div>
+                    <img src="assets/blog-images/Ellipse 54.svg" alt="" />
+                  </div>
+                  <div class="change-font">Bambam</div>
+                </div>
+                <div class="d-flex justify-content-center align-items-center">
+                  <div>
+                    <img src="assets/blog-images/Star 5.svg" alt="" />
+                  </div>
+                  <div>
+                    <img src="assets/blog-images/Star 5.svg" alt="" />
+                  </div>
+                  <div>
+                    <img src="assets/blog-images/Star 5.svg" alt="" />
+                  </div>
+                  <div>
+                    <img src="assets/blog-images/Star 8.svg" alt="" />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <h3>Add your comment</h3>
+          <div class="add-width-again">
+            <div class="card add-color">
+              <div class="px-3 my-3">
+                <img
+                  src="assets/blog-images/Rectangle 534.svg"
+                  class="add-img-width img-fluid"
+                  alt="e no dey here"
+                />
+
+                <h2 class="card-title">Chicken</h2>
+
+                <div class="card-text d-flex align-items-center mb-3 gap-2">
+                  <div>
+                    <img src="assets/blog-images/Ellipse 54.svg" alt="" />
+                  </div>
+                  <div class="change-font">Bambam</div>
+                </div>
+                <div class="d-flex justify-content-center align-items-center">
+                  <div>
+                    <img src="assets/blog-images/Star 5.svg" alt="" />
+                  </div>
+                  <div>
+                    <img src="assets/blog-images/Star 5.svg" alt="" />
+                  </div>
+                  <div>
+                    <img src="assets/blog-images/Star 5.svg" alt="" />
+                  </div>
+                  <div>
+                    <img src="assets/blog-images/Star 8.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+      <div class="">
+        <h3 class="my-4 mx-5 px-5 fs-sm-4 fs-md-4 fs-lg-2 font-title">
+          Add your comment
+        </h3>
+      </div>
+      <div class="container-fluid my-5">
+        <div class="text-center mx-auto">
+          <h3 class="font-1">What do you think?</h3>
+
+          <p class="font-2">23 Responses</p>
+        </div>
+
+        <div>
+          <div class="d-flex justify-content-center gap-5">
+            <mat-icon class="custom-icon">sentiment_dissatisfied</mat-icon>
+            <mat-icon class="custom-icon">thumb_up</mat-icon>
+            <mat-icon class="custom-icon"> sentiment_very_satisfied</mat-icon>
+          </div>
+        </div>
+        <div
+          class="d-flex gap-4 justify-content-center align-items-center my-5 move-div-left"
+        >
+          <div class="">
+            <p class="add-comment">0 Comment</p>
+          </div>
+          <div>
+            <p class="add-comment">Bambam</p>
+          </div>
+        </div>
+        <div class="d-flex align-items-center gap-2 p-4 favourite">
+          <div>
+            <mat-icon class="custom-icon-2">favorite</mat-icon>
+          </div>
+          <div>
+            <p class="font-2 mt-2">Favourite</p>
+          </div>
+          <div class="square-div">1</div>
+        </div>
+
+        <!-- fixing -->
+        <section class="flex-section favourite">
+          <div>
+            <mat-icon class="custom-icon-3 squared-div">person</mat-icon>
+          </div>
+
+          <div class="flex-contact">
+            <input type="text" placeholder="Start the discussion..." />
+            <h6 class="login">LOG IN WITH</h6>
+            <div class="signup-div">
+              <div class="div-1">
+                <h6 class="signup-text login-1">OR SIGN UP WITH DISQUS ?</h6>
+              </div>
+
+              <div class="flex-2">
+                <div class="social-imgs">
+                  <div
+                    class="circle-div d-flex align-items-center justify-content-center gap-5"
+                  >
+                    <img
+                      src="assets/blog-images/Vector (7).svg"
+                      alt=""
+                      class="reduce-size"
+                    />
+                  </div>
+
+                  <div
+                    class="circle-div-1 d-flex align-items-center justify-content-center"
+                  >
+                    <img
+                      src="assets/blog-images/Vector (8).svg"
+                      alt=""
+                      class="reduce-size"
+                    />
+                  </div>
+                  <div
+                    class="circle-div-2 d-flex align-items-center justify-content-center"
+                  >
+                    <img
+                      src="assets/blog-images/Vector (9).svg"
+                      alt=""
+                      class="reduce-size"
+                    />
+                  </div>
+                </div>
+                <input type="text" placeholder="Name" />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- End Fixing-->
+      </div>
+      <br />
+      <br />
+      <div class="text-center mx-auto">
+        <p class="comment">Be the first to comment.</p>
+      </div>
+      <br />
+      <br />
+      <hr />
+      <!-- // START HEREEEEE -->
+
+      <div
+        class="d-flex justify-content-center align-items-center foots mt-2 gap-1"
+      >
+        <div class="d-flex gap-1">
+          <mat-icon class="custom-footer-icon">mail</mat-icon>
+          <p class="mat footer-font">Subscribe</p>
+          <div></div>
+        </div>
+        <div class="d-flex gap-1">
+          <div
+            class="circled-div-3 d-flex align-items-center justify-content-center mats text-white"
+          >
+            D
+          </div>
+          <div>
+            <p class="mat footer-font">Add Disqus to your site</p>
+          </div>
+        </div>
+        <div class="d-flex">
+          <mat-icon class="custom-footer-icon">warning</mat-icon>
+          <div>
+            <p class="mat footer-font">Do Not Sell My Data</p>
+          </div>
+        </div>
+      </div>
+      <p class="disqus">DISQUS</p>
+      <div class="footBg">
+        <hr class="mt-4" />
+
+        <section class="newsFooter d-flex">
+          <div>
+            <p>NEWSLETTER</p>
+            <span>Sign up to receive email updates on new recipes</span>
+          </div>
+          <div>
+            <input type="text" placeholder="Your email address" />
+            <button type="button">SUBSCRIBE</button>
+          </div>
+        </section>
       </div>
     </div>
   </div>
