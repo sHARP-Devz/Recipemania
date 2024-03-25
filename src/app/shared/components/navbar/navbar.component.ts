@@ -18,17 +18,13 @@ export class NavbarComponent {
 
   // @Input() isLoggedIn: boolean = false; // Initially set to false to hide the navbar
 
-<<<<<<< HEAD
-=======
-  isCat:boolean = false;
+  isCat: boolean = false;
 
   isCatOpen() {
-    this.isCat = !this.isCat
-    console.log(this.isCat)
+    this.isCat = !this.isCat;
+    console.log(this.isCat);
   }
 
-
->>>>>>> 1ddd39bfe42c53295f6f28311a774c48109416ba
   isMobile: boolean = false;
   toggle: boolean = false;
 
